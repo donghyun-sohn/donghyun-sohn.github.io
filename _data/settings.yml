@@ -1,6 +1,6 @@
 menu:
 - {name: 'Publications', url: '/publications'}
-- {name: 'CV', url: '/cv'}
+- {name: 'CV', url: '/cv/Donghyun_Sohn_CV.pdf'}
 - {name: 'Blogs', url: '/blogs'}
 
 people:
