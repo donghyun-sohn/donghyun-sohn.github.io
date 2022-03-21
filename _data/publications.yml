@@ -1,8 +1,8 @@
 featured:
 - {name: 'Disk-based BACF Tree for Clustering Massive Datasets.'
-    <br>
-    <u><b>Donghyun Sohn</b></u>, Sungwon Jung, Korea Software Congress 2021. <b>(Encouragement Prize)<b>
     , url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035989',
+    description: '<u><b>Donghyun Sohn</b></u>, Sungwon Jung, Korea Software Congress 2021. <b>(Encouragement Prize)<b>'
+    
 }
 - {name: 'A real-time monitoring system using OpenPose. Donghyun Sohn, Jinwon Jung, Hyungjoon Kwon, Donghyuk Jeong, Dayoung Yoon, Myungwan Koo, Korea Software Congress 2021. (Excellence Prize)', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017'}
 
