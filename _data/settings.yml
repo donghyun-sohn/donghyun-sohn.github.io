@@ -12,7 +12,7 @@ courses:
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn'}
 - {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/li/bulelion37'}
+- {icon: 'linkedin', link: 'https://linkedin.com/in/bulelion37/'}
 
 contacts:
 - {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
