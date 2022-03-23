@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Quantum Mechanics"
+title: "MIT 6.875"
 ---
 
 #### Course Information
