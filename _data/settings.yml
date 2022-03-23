@@ -1,10 +1,11 @@
 menu:
-- {name: 'Research', url: '/publications'}
+- {name: 'Research', url: '/research'}
 - {name: 'Publications', url: '/publications'}
 - {name: 'CV', url: '/cv/Donghyun_Sohn_CV.pdf'}
+- {name: 'Backgrounds', url: '/backgrounds'}
 - {name: 'Blogs', url: '/blogs'}
 
-courses:
+backgrounds:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
 - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
 - {name: 'Stellar Structures', url: 'stellar-structures'}
