@@ -8,6 +8,8 @@ layout: default
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Courses</h3>
     {% for course in site.data.settings.backgrounds %}
+    it worked.
+    {course}
       <p><a href="{{ site.github.url }}/backgrounds/{{ course.url}}">{{ course.name }}</a></p>
     {% endfor %}
   </div>
