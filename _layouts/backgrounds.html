@@ -2,7 +2,6 @@
 layout: default
 ---
 
-{{ content }}
 
 <div class="row g-5 mb-5">
   <div>
