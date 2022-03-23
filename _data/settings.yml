@@ -6,7 +6,7 @@ menu:
 - {name: 'Blogs', url: '/blogs'}
 
 backgrounds:
-- {name: '15-445/645 Intro to Database Systems (Fall 2021)', url: '15-445/645'}
+- {name: '15-445/645 Intro to Database Systems (Fall 2021)', url: '15-445-645'}
 - {name: 'MIT 6.875 Foundations of Cryptography (Fall 2021)', url: 'MIT 6.875'}
 
 social:
