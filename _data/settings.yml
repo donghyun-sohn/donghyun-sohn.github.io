@@ -2,7 +2,7 @@ menu:
 - {name: 'Research', url: '/research'}
 - {name: 'Publications', url: '/publications'}
 - {name: 'CV', url: '/cv/Donghyun_Sohn_CV.pdf'}
-- {name: 'Backgrounds', url: '/backgrounds'}
+#- {name: 'Backgrounds', url: '/backgrounds'}
 - {name: 'Blogs', url: '/blogs'}
 
 backgrounds:
