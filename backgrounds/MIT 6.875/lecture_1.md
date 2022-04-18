@@ -2,10 +2,9 @@
 layout: page
 title: "MIT 6.875"
 ---
-###
-This posting is based on MIT 6.875 Foundations of Cryptography (Fall 2021) lecture.
+#### Notice
+This posting is based on Prof. Vinod Vaikuntanathan's MIT 6.875 Foundations of Cryptography (Fall 2021) lecture. <br>
 Lecture link : http://mit6875.org
-
 
 #### Lecture Notes
 
