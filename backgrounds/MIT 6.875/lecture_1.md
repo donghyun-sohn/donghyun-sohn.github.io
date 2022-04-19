@@ -15,22 +15,23 @@ Reference : [The Joy of Crpytography](https://joyofcryptography.com) by Mike Ros
 
 #### Encryption Basics & Terminology
 
-<img src = "/lecture_1/figure1.png">
+<img src = "./lecture_1/figure1.png">
 
 Cryptography is based on above scenario.
 
-Alice has a message m, which is the <b>plaintext</b>. 
-Plaintext is transformed into a value c, which is the <b>ciphertext</b>.
-The process of transforming m into c is called encryption (<b>Enc</b>), and when Bob receives c, he runs a corresponding decryption algorithm (<b>Dec</b>) to recover the original plaintext m. 
-We assume that the ciphertext may be observed by the eavesdropper Eve, so the goal is for the ciphertext to be meaningful to Bob but meaningless to Eve. 
+Alice has a message m, which is the <b>plaintext</b>.<br>
+Plaintext is transformed into a value c, which is the <b>ciphertext</b>. <br>
+The process of transforming m into c is called encryption (<b>Enc</b>), and when Bob receives c, he runs a corresponding decryption algorithm (<b>Dec</b>) to recover the original plaintext m. <br>
+We assume that the ciphertext may be observed by the eavesdropper Eve, so the goal is for the ciphertext to be meaningful to Bob but meaningless to Eve. <br>
 
 #### Secrets & Kerckhoff's Principle 
+<br>
+If we want Bob to be able to decrypt c, but Eve to not be able to decrypt c, then Bob must have some information that Eve doesn’t have. Something has to be kept secret from Eve. <br>
+You might suggest to make the details of the Enc and Dec algorithms secret.<br>
 
-If we want Bob to be able to decrypt c, but Eve to not be able to decrypt c, then Bob must have some information that Eve doesn’t have. Something has to be kept secret from Eve. 
-You might suggest to make the details of the Enc and Dec algorithms secret.
 In the last 2000 years,  the details of the Enc and Dec algorithms are secret. However, it has major drawbacks. 
 If the attacker does eventually learn the details of Enc and Dec, then the only way to recover security is to invent new algorithms. <br>
-The first person to articulate this problem was <b>Augeste Kerckhoffs</b>.
+The first person to articulate this problem was <b>Augeste Kerckhoffs</b>. <br>
 
 > Kerckhoffs’ Principle:
 “Il faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.”
@@ -40,7 +41,7 @@ The first person to articulate this problem was <b>Augeste Kerckhoffs</b>.
 If the algorithms are not secret, there must be some other secret information in the system. That information is called the <b>(secret) key</b>.
 Another way to interpret Kerckhoff's principle is that all of the security of the system should be concentrated in the secrecy of the key, not the secrecy of the algorithms. 
 
-<img src = "">
+<img src = "./lecture_1/figure2.png">
 
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
@@ -56,6 +57,8 @@ From this assumation, we can have a key question <b>"What is the adversary tryin
 These questions will lead us to the security definition. 
 
 ### Shannon’s Perfect Secrecy Definition
+
+<img src = "./lecture_1/figure3.png">
 
 For every algorithm EVE : \forall
 
