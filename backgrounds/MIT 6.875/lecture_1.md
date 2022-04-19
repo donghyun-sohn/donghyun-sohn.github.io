@@ -18,7 +18,7 @@ Reference : [The Joy of Crpytography](https://joyofcryptography.com) by Mike Ros
 
 #### Encryption Basics & Terminology
 
-<img src = "./lecture_1/figure1.png">
+<img src = "./lecture_1/figure1.png" width = "300">
 
 Cryptography is based on above scenario.
 
@@ -44,7 +44,7 @@ The first person to articulate this problem was <b>Augeste Kerckhoffs</b>. <br>
 If the algorithms are not secret, there must be some other secret information in the system. That information is called the <b>(secret) key</b>.
 Another way to interpret Kerckhoff's principle is that all of the security of the system should be concentrated in the secrecy of the key, not the secrecy of the algorithms. 
 
-<img src = "./lecture_1/figure2.png">
+<img src = "./lecture_1/figure2.png" width = "300">
 
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
@@ -61,7 +61,7 @@ These questions will lead us to the security definition.
 
 ### Shannon’s Perfect Secrecy Definition
 
-<img src = "./lecture_1/figure3.png">
+<img src = "./lecture_1/figure3.png" width = "300">
 
 For every algorithm EVE : \forall
 
