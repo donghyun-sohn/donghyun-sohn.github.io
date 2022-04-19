@@ -63,19 +63,17 @@ $$
 \begin{align*}
 & \forall EVE \\
 & Pr[EVE(Enc(k,m)) = m] = 0 \\
-& k \leftarrow Gen(1^n) \\
-& m \leftarrow M(=probability \, distribution) \\
+& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \, distribution) \\
 \end{align*}
 $$
 
 <br>
 $$
-\begin{align*}
+begin{align*}
 & \forall EVE \\
 & Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
-& k \leftarrow Gen(1^n) \\
-& m \leftarrow M(=probability \, distribution) \\
-& \end{align*}
+& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution) \\
+end{align*}
 $$
 
 <br>
