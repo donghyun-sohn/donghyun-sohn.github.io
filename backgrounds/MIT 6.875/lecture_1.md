@@ -1,6 +1,9 @@
 ---
 layout: page
 title: "MIT 6.875 - Lecture 1"
+tags:
+  - Crpytography
+use_math: true
 ---
 
 ### Notice

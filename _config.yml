@@ -2,3 +2,10 @@ url: "https://donghyun-sohn.github.io" # the base hostname & protocol for your s
 baseurl: "/test" # the subpath of your site, e.g. /blog
 title: "Donghyun Sohn" # the name of your site, e.g. ACME Corp.
 description: "Lay the foundation"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
