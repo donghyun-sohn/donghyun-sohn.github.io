@@ -62,11 +62,11 @@ These questions will lead us to the security definition.
 <br>
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
-\begin{&align}
-\forall EVE <br>
- Pr[EVE(Enc(k,m)) = m] <= 1/|m| \
-  k\leftarrow Gen(1^n) \
-  m\leftarrow M(=probability \, distribution) 
-\end{&align}
+\begin{align}
+&\forall EVE <br>
+&Pr[EVE(Enc(k,m)) = m] <= 1/|m| \
+&k\leftarrow Gen(1^n) \
+&m\leftarrow M(=probability \, distribution) 
+\end{align}
 
 
