@@ -13,13 +13,13 @@ This posting is based on Prof. Vinod Vaikuntanathan's <b>MIT 6.875 Foundations o
 Lecture link : [http://mit6875.org](http://mit6875.org)
 
 Reference : [The Joy of Crpytography](https://joyofcryptography.com) by Mike Rosulek
-  
+  <br><br>
 ### Secure Communication
-
+<br>
 #### Encryption Basics & Terminology
-
+<br>
 <img src = "./lecture_1/figure1.png" width = "300">
-
+<br>
 Cryptography is based on above scenario.
 
 Alice has a message m, which is the <b>plaintext</b>.<br>
@@ -44,8 +44,9 @@ The first person to articulate this problem was <b>Augeste Kerckhoffs</b>. <br>
 If the algorithms are not secret, there must be some other secret information in the system. That information is called the <b>(secret) key</b>.
 Another way to interpret Kerckhoff's principle is that all of the security of the system should be concentrated in the secrecy of the key, not the secrecy of the algorithms. 
 
+<br>
 <img src = "./lecture_1/figure2.png" width = "300">
-
+<br>
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
 Why key generation algorithm has to be probabilistic?
@@ -58,11 +59,12 @@ To sum up, we assume the worst-case adversary as follows.
 
 From this assumation, we can have a key question <b>"What is the adversary trying to learn?"</b>, and conversely <b>"What are we trying to prevent the adversary from learning"</b>. 
 These questions will lead us to the security definition. 
-
+<br>
 ### Shannon’s Perfect Secrecy Definition
-
+<br>
 <img src = "./lecture_1/figure3.png" width = "300">
-
+<br>
 For every algorithm EVE : \forall
+This formula $f(x) = x^2$ is an example.
 
 
