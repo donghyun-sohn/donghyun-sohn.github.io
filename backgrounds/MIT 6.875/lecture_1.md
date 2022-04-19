@@ -64,14 +64,14 @@ These questions will lead us to the security definition.
 <br>
 \begin{align}
 \forall EVE \\
-Pr$$[EVE(Enc(k,m)) = m]$$ = 0 \\
+Pr[EVE(Enc(k,m)) = m] = 0 \\
 k \leftarrow Gen(1^n) \\
 m \leftarrow M(=probability \, distribution) \\
 \end{align}
 <br>
 \begin{align}
 \forall EVE \\
-Pr$$[EVE(Enc(k,m)) = m]$$ \leq 1/|m| \\
+Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
 k \leftarrow Gen(1^n) \\
 m \leftarrow M(=probability \, distribution) \\
 \end{align}
