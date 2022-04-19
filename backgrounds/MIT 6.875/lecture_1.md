@@ -15,10 +15,9 @@ Lecture link : [http://mit6875.org](http://mit6875.org)
 Reference : [The Joy of Crpytography](https://joyofcryptography.com) by Mike Rosulek
   <br><br>
 ### Secure Communication
-<br>
 #### Encryption Basics & Terminology
 <br>
-<img src = "./lecture_1/figure1.png" width = "300">
+<img src = "./lecture_1/figure1.png" width = "500">
 <br>
 Cryptography is based on above scenario.
 
@@ -28,7 +27,6 @@ The process of transforming m into c is called encryption (<b>Enc</b>), and when
 We assume that the ciphertext may be observed by the eavesdropper Eve, so the goal is for the ciphertext to be meaningful to Bob but meaningless to Eve. <br>
 
 #### Secrets & Kerckhoff's Principle 
-<br>
 If we want Bob to be able to decrypt c, but Eve to not be able to decrypt c, then Bob must have some information that Eve doesn’t have. Something has to be kept secret from Eve. <br>
 You might suggest to make the details of the Enc and Dec algorithms secret.<br>
 
@@ -39,13 +37,13 @@ The first person to articulate this problem was <b>Augeste Kerckhoffs</b>. <br>
 > Kerckhoffs’ Principle:
 “Il faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.”
  
- > Literal translation: [The method] must not be required to be secret, and it must be able to fall into the enemy’s hands without causing inconvenience.
+> Literal translation: [The method] must not be required to be secret, and it must be able to fall into the enemy’s hands without causing inconvenience.
 
 If the algorithms are not secret, there must be some other secret information in the system. That information is called the <b>(secret) key</b>.
 Another way to interpret Kerckhoff's principle is that all of the security of the system should be concentrated in the secrecy of the key, not the secrecy of the algorithms. 
 
 <br>
-<img src = "./lecture_1/figure2.png" width = "300">
+<img src = "./lecture_1/figure2.png" width = "500">
 <br>
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
@@ -62,9 +60,13 @@ These questions will lead us to the security definition.
 <br>
 ### Shannon’s Perfect Secrecy Definition
 <br>
-<img src = "./lecture_1/figure3.png" width = "300">
+<img src = "./lecture_1/figure3.png" width = "500">
 <br>
-For every algorithm EVE : \forall
-This formula $f(x) = x^2$ is an example.
+\begin{equation}
+\forall EVE
+ Pr[EVE(Enc(k,m)) = m] <= 1/|m|
+  k\leftarrowGen(1^n)
+  m\leftarrowM(=probability distribution)
+\end{equation}
 
 
