@@ -47,7 +47,7 @@ Another way to interpret Kerckhoff's principle is that all of the security of th
 <br>
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
-Why key generation algorithm has to be probabilistic?
+Why key generation algorithm has to be probabilistic? <br>
  -> If deterministic, adversary can run this and get the key. 
 
 To sum up, we assume the worst-case adversary as follows. 
@@ -63,10 +63,10 @@ These questions will lead us to the security definition.
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
 \begin{equation}
-\forall EVE
- Pr[EVE(Enc(k,m)) = m] <= 1/|m|
-  k\leftarrowGen(1^n)
-  m\leftarrowM(=probability distribution)
+\forall EVE <br>
+ Pr[EVE(Enc(k,m)) = m] <= 1/|m| <br>
+  k\leftarrow Gen(1^n)
+  m\leftarrow M(=probability \, distribution)
 \end{equation}
 
 
