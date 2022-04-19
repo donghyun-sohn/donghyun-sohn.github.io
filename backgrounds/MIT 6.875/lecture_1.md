@@ -62,12 +62,12 @@ These questions will lead us to the security definition.
 <br>
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
-\begin{align}
+$$
 \forall EVE \\
 Pr[EVE(Enc(k,m)) = m] = 0 \\
 k \leftarrow Gen(1^n) \\
 m \leftarrow M(=probability \, distribution) \\
-\end{align}
+$$
 
 <br>
 \begin{align}
@@ -77,10 +77,5 @@ k \leftarrow Gen(1^n) \\
 m \leftarrow M(=probability \, distribution) \\
 \end{align}
 
-$$
-\wedge = \text{and} \\
-\lor = \text{or} \\
-\lnot = \text{not}
-$$
 
 
