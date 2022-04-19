@@ -48,7 +48,9 @@ Another way to interpret Kerckhoff's principle is that all of the security of th
 The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
 
 Why key generation algorithm has to be probabilistic? <br>
- -> If deterministic, adversary can run this and get the key. 
+ -> If deterministic, adversary can run this and get the key. <br>
+
+#### The worst-case adversary
 
 To sum up, we assume the worst-case adversary as follows. 
 *  An arbitrary computationally unbounded algorithm EVE. 
@@ -57,35 +59,27 @@ To sum up, we assume the worst-case adversary as follows.
 
 From this assumation, we can have a key question <b>"What is the adversary trying to learn?"</b>, and conversely <b>"What are we trying to prevent the adversary from learning"</b>. 
 These questions will lead us to the security definition. 
+$$
+\begin{align*}
+& \forall EVE \\
+& Pr[EVE(Enc(k,m)) = m] = 0 \\
+& k \leftarrow Gen(1^n) \\
+& m \leftarrow M(=probability \, distribution) \\
+\end{align*}
+$$
+
+<br>
+$$
+\begin{align*}
+& \forall EVE \\
+& Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
+& k \leftarrow Gen(1^n) \\
+& m \leftarrow M(=probability \, distribution) \\
+& \end{align*}
+$$
+
 <br>
 ### Shannon’s Perfect Secrecy Definition
 <br>
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
-$$
-\begin{align}
-\forall EVE \\
-Pr[EVE(Enc(k,m)) = m] = 0 \\
-k \leftarrow Gen(1^n) \\
-m \leftarrow M(=probability \, distribution) \\
-\end{align}
-$$
-
-<br>
-\begin{align}
-\forall EVE \\
-Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
-k \leftarrow Gen(1^n) \\
-m \leftarrow M(=probability \, distribution) \\
-\end{align}
-
-
-$$
-\begin{align}
-\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
- & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
- & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
- & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
- & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
-\end{align}
-$$
