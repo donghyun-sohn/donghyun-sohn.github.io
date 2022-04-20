@@ -78,11 +78,13 @@ Therefore, we need to fix this formula as follows.
 
 <br>
 
+$$
 \begin{align*}
 & \forall EVE \\
 & Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
 & k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution(uniform \; over \; some \; set)) \\
 \end{align*}
+$$
 
 Is this achievable ? <br>
 
@@ -96,6 +98,61 @@ We need some refinement to this formula.
 <br>
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
+
+Before watching this definition, we need to know the basic meaning of conditional probability. 
+
+
+$P(A|B) = \frac {P(A \cap B)}{P(B)}$
+
+It refers to the probability that event A will occur when event B occurs.
+
 Key idea is that you compare two worlds. <br>
 
+* A-posteriori world
+    * The adversary sees the ciphertext that goes through the channel, and trying to guess the message. 
+    * A-posteriori probability that the mesage is equal to plaintext conditioned on the fact that EVE saw the ciphertext. 
+* A-priori world 
+    * This is the world that the adversary does not see anything at all, and just guess. 
+
+A-posteriori = A-priori <br>
+means that seeing the ciphertext does not matter at all. 
+This is the theme that will come up again and again in cryptography. We compare two worlds. One, the real world, where the adversary has some information, which is the ciphertext. 
+And Other, the ideal world where the adversary has no information.
+We want to say that the adversary learns no more in the real world than in ideal world. 
+
+### Perfect Indistinguishability Definition
+<br>
+<img src = "./lecture_1/figure4.png" width = "500">
+<br>
+
+Perfect indistinguishability definition is equivalent to perfect secrecy. <br>
+Perfect indistinguishability is similar to a Turing test. <br>
+
+She is given one of the two boxes and needs to decide which box am I interacting. <br> 
+The goal of the adversary is that trying to be a distinguisher, so that she can guess which world she is in.  <br>
+In each world, keys are generated randomly from a probability distribution, so keys are not the same. <br>
+
+Cool thing is that these two definitions are equivalent. <br>
+An encrption scheme (Gen, Enc, Dec) satisfies perfect secrecy IFF it satisfies perfect indistinguishability.
+<br>
+
+### One-time pad
+<br>
+Can we achieve perfect secrecy ? 
+The answer is yes by using the one-time pad.<br>
+One-time pad has two properties. 
+
+* correctness
+    * The first property of one-time pad that we should confirm is that the receiver does indeed recover the intended plaintext when decrypting the ciphertext. 
+* security
+
+Reusing a one-time pad is not perfectly secret. 
+
+### Limitation
+Perfect secrecy is achievable, but has its price. <br>
+Any perfectly secure encryption scheme needs keys that are at least as long as the messages. <br>
+Therefore, we need to relax the definition. <br>
+
+EVE is an arbitrary <b>compuatationally bounded </b> algorithm.  <br>
+= EVE is a polynomial time algorithm <br>
 
