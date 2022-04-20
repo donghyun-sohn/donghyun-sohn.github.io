@@ -67,17 +67,38 @@ $$
 \end{align*}
 $$
 
+(n is the length of the key, and M is the probability distributions on possible messages.)
+
+This formula means that <br>
+for every algorithm EVE, the probability that EVE gets plaintext m by using encryption of k and m is 0. 
+ 
+However, this is impossible, and there is tiny advantage than 0. <br>
+Therefore, we need to fix this formula as follows.  
+
+
 <br>
 $$
 begin{align*}
 & \forall EVE \\
 & Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
-& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution) \\
+& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution(uniform \; over \; some \; set)) \\
 end{align*}
 $$
+
+Is this achievable ? <br>
+
+The answer is no. Message space is extraneous to us, so message space is not necessarily uniform. However, we can control the key space. <br>
+We need some refinement to this formula. 
+
+
+
+\[\begin{align} \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right) \end{align}\]
 
 <br>
 ### Shannon’s Perfect Secrecy Definition
 <br>
 <img src = "./lecture_1/figure3.png" width = "500">
 <br>
+Key idea is that you compare two worlds. <br>
+
+
