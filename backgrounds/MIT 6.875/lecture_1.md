@@ -75,9 +75,6 @@ for every algorithm EVE, the probability that EVE gets plaintext m by using encr
 However, this is impossible, and there is tiny advantage than 0. <br>
 Therefore, we need to fix this formula as follows.  
 
-
-<br>
-
 $$
 \begin{align*}
 & \forall EVE \\
@@ -102,7 +99,11 @@ We need some refinement to this formula.
 Before watching this definition, we need to know the basic meaning of conditional probability. 
 
 
-$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
+$$
+\begin{align*}
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+\end{align}
+$$
 
 It refers to the probability that event A will occur when event B occurs.
 
