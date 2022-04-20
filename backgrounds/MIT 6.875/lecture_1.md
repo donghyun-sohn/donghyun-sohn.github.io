@@ -1,8 +1,10 @@
 ---
 layout: page
 title: "MIT 6.875 - Lecture 1"
+author: "Donghyun Sohn"
+date: "2022/4/18"
 tags:
-  - Crpytography
+  - cryptography
 use_math: true
 ---
 
