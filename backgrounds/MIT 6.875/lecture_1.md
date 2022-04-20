@@ -101,8 +101,8 @@ Before watching this definition, we need to know the basic meaning of conditiona
 
 $$
 \begin{align*}
-P(A|B) = \frac{P(A \cap B)}{P(B)}
-\end{align}
+&P(A|B) = \frac {P(A \cap B)}{P(B)}
+\end{align*}
 $$
 
 It refers to the probability that event A will occur when event B occurs.
