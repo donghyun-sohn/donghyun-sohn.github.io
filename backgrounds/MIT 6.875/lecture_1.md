@@ -102,7 +102,7 @@ We need some refinement to this formula.
 Before watching this definition, we need to know the basic meaning of conditional probability. 
 
 
-$P(A|B) = \frac {P(A \cap B)}{P(B)}$
+$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
 It refers to the probability that event A will occur when event B occurs.
 
@@ -137,7 +137,6 @@ An encrption scheme (Gen, Enc, Dec) satisfies perfect secrecy IFF it satisfies p
 <br>
 
 ### One-time pad
-<br>
 Can we achieve perfect secrecy ? 
 The answer is yes by using the one-time pad.<br>
 One-time pad has two properties. 
