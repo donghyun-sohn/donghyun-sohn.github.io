@@ -77,13 +77,12 @@ Therefore, we need to fix this formula as follows.
 
 
 <br>
-$$
-begin{align*}
+
+\begin{align*}
 & \forall EVE \\
 & Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
 & k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution(uniform \; over \; some \; set)) \\
-end{align*}
-$$
+\end{align*}
 
 Is this achievable ? <br>
 
@@ -91,8 +90,6 @@ The answer is no. Message space is extraneous to us, so message space is not nec
 We need some refinement to this formula. 
 
 
-
-\[\begin{align} \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right) \end{align}\]
 
 <br>
 ### Shannon’s Perfect Secrecy Definition
