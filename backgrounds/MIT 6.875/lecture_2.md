@@ -101,9 +101,21 @@ If the absolute value of these two probabilities are neglible, then it means ind
 Additionally, function G has to be uninvertible. <br><br>
 Why is this a good definition ? <br>
 <b>Good for all applications </b><br>
-As long as we can find truly random seeds, can replace true randomness by the output of PRG(seed) in ANY (polynomial-time) application. <br>
+As long as we can find truly random seeds, can replace true randomness by the output of PRG(seed) in ANY (polynomial-time) application. <br><br>
+
 Purpose of this class is to overcome Shannon's conundrum. We need to encrypt n+1 bits using an n-bit key. <br>
-<img src = "./lecture_2/figure11.png" width = "500">
+<img src = "./lecture_2/figure11.png" width = "500"><br>
+
+This is very good news. Because if we have a random generator, then we can move beyond Shannon. <br>
+
+There are two questions. <br>
+<img src = "./lecture_2/figure12.png" width = "500"> <br>
+
+##### Q1 : Do PRGs exist ? 
+###### Constructing PRGs : Two Methodologies
+* The Practical Methodology
+* The Foundation Methodology
+ 
  
 
 
