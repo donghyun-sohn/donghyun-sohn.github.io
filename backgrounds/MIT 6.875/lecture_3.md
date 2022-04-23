@@ -2,7 +2,7 @@
 layout: page
 title: "MIT 6.875 - Lecture 3"
 author: "Donghyun Sohn"
-date: "2022/4/20"
+date: "2022/4/21"
 tags:
   - cryptography
 use_math: true
