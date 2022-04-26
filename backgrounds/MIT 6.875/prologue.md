@@ -52,145 +52,16 @@ $$
 OTP는 perfect secrecy를 갖고 있으므로 암호문으로부터 평문과 관련된 아무런 정보를 얻어낼 수 없다. 그러므로 ciphertext only attack은 OTP 방식에 소용이 없다. <br>
 하지만, OTP는 치명적인 단점이 존재한다. OTP는 암호화 키의 길이 상당히 길 수 밖에 없다. 자신의 메세지의 길이만큼이나 똑같은 긴 키를 사용해야 하기 때문이다. 그러므로 OTP의 효율을 높이기 위해서 키의 길이를 줄일 수 있는 방법이 있는지 고민을 해보아야 하지만, 그런 방법은 없다. 섀넌은 OTP의 안정성을 증명함과 동시에 한 가지 제약조건을 언급하였는데, 그것은 바로 <b>키의 길이는 메세지의 길이보다 크거나 같을 수 밖에 없다</b>라는 것이다. 이것이 최악의 단점인 이유는 메세지 송신자와 수신자가 안전하게 통신을 하고 싶어서 암호화를 수행하고, 암호화에 필요한 키를 서로 공유해야하는데 이 과정에서 키의 길이가 메세지처럼 길다면 배보다 배꼽이 더 커지는 상황이 되는 것이다. 이 단점 때문에 OTP는 현실 세계에서 거의 사용되지 않는다. 그렇다면 OTP의 장점을 살리되, 단점을 최소화할 수 있는 방책은 없는 것인가? <br>
 
-### Secure Communication
-#### Encryption Basics & Terminology
-<br>
-<img src = "./lecture_1/figure1.png" width = "500">
-<br>
-Cryptography is based on above scenario.
+#### Practical version of OTP
+OTP는 암호화 키인 K와 메세지 M을 XOR 연산을 수행하는 것으로 빠르게 암호화를 수행할 수 있다. 또한 암호문 C에 다시 K를 XOR하면 복호화까지 수행되는 방식이다. OTP는 다른 암호 방식에 비해 암호문 단독 공격으로부터 perfect secrecy함이 입증되었다. 즉, 공격자는 암호문 C로부터 원문 M에 대한 그 어떠한 정보도 얻을 수 없는 것이다. 이러한 장점에도 불구하고, OTP는 단점이 있다. OTP를 수행하기 위해서는 키의 길이가 메세지의 길이 이상으로 길어야만 한다는 점이다. 따라서 OTP의 장점은 살리고, 단점을 최소화하는 방책으로 OTP의 실용적인 버전인 "Stream Cipher"가 나오게 되었다. 원래는 Totally random key(완전히 무작위적인 난수로 이루어진 암호화 키)를 사용해야 하지만, 이것을 조금 단순화 시켜서 Pseudo-random key(의사 난수)로 대체하는 것이다. <br>
 
-Alice has a message m, which is the <b>plaintext</b>.<br>
-Plaintext is transformed into a value c, which is the <b>ciphertext</b>. <br>
-The process of transforming m into c is called encryption (<b>Enc</b>), and when Bob receives c, he runs a corresponding decryption algorithm (<b>Dec</b>) to recover the original plaintext m. <br>
-We assume that the ciphertext may be observed by the eavesdropper Eve, so the goal is for the ciphertext to be meaningful to Bob but meaningless to Eve. <br>
+##### Pseudo Random Generator (PRG)
+의사 난수를 생성하는 Function을 의사난수 생성기라고 한다. 이 함수는 전체 스페이스인 N보다 차원을 축소시킨 S만큼의 스페이스를 seed로 설정한다. 즉, {0,1}^S인 S-bit의 값이 seed가 되며, 해당 함수를 통해 {0,1}^N인 N-bit 문자열로 매핑시키는 것이다. 이 때, N >> S인, N이 S보다 훨씬 더 큰 값으로 가정한다. 예를 들어 S가 128 bit 정도의 길이라면, 결과 값은 기가 바이트 단위의 데이터가 될 수도 있다. 이것이 PRG의 역할이며, 이 기능을 수행할 때, 효과적으로 그 값을 계산해낼 수 있다고 가정한다. 이 알고리즘은 빠르게 계산이 가능하여야하며, 결정론적(deterministic)이다. 실제로 무작위적인 값은 seed이며, 이 seed의 작용으로 인한 결과물은 마치 '무작위인 것처럼 보이는 (look random)' 값이 도출된다. 무작위가 아닌 무작위처럼 보인다는 의미는 조금 이따가 설명하겠다. <br>
 
-#### Secrets & Kerckhoff's Principle 
-If we want Bob to be able to decrypt c, but Eve to not be able to decrypt c, then Bob must have some information that Eve doesn’t have. Something has to be kept secret from Eve. <br>
-You might suggest to make the details of the Enc and Dec algorithms secret.<br>
-
-In the last 2000 years,  the details of the Enc and Dec algorithms are secret. However, it has major drawbacks. 
-If the attacker does eventually learn the details of Enc and Dec, then the only way to recover security is to invent new algorithms. <br>
-The first person to articulate this problem was <b>Augeste Kerckhoffs</b>. <br>
-
-> Kerckhoffs’ Principle:
-“Il faut qu’il n’exige pas le secret, et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.”
- 
-> Literal translation: [The method] must not be required to be secret, and it must be able to fall into the enemy’s hands without causing inconvenience.
-
-If the algorithms are not secret, there must be some other secret information in the system. That information is called the <b>(secret) key</b>.
-Another way to interpret Kerckhoff's principle is that all of the security of the system should be concentrated in the secrecy of the key, not the secrecy of the algorithms. 
-
-<br>
-<img src = "./lecture_1/figure2.png" width = "500">
-<br>
-The process of choosing a secret key is called key generation, and we write <b>KeyGen</b> to refer to the (randomized) key generation algorithm. We call the collection of three algorithms <b>(Enc, Dec, KeyGen)</b> an encryption scheme. Remember that Kerckhoffs’ principle says that we should assume that an attacker knows the details of the KeyGen algorithm. But also remember that knowing the details (i.e., source code) of a randomized algorithm doesn’t mean you know the speci c output it gave when the algorithm was executed. 
-
-Why key generation algorithm has to be probabilistic? <br>
- -> If deterministic, adversary can run this and get the key. <br>
-
-#### The worst-case adversary
-
-To sum up, we assume the worst-case adversary as follows. 
-*  An arbitrary computationally unbounded algorithm EVE. 
-* Eve knows Alice and Bob's algorithms Gen, Enc, and Dec but does not know the key nor their internal randomness. 
-* Eve can see the ciphertexts going through the channel. (cannot modify them, but powerful adversary can modify them in the later lecture)
-
-From this assumation, we can have a key question <b>"What is the adversary trying to learn?"</b>, and conversely <b>"What are we trying to prevent the adversary from learning"</b>. 
-These questions will lead us to the security definition. 
-$$
-\begin{align*}
-& \forall EVE \\
-& Pr[EVE(Enc(k,m)) = m] = 0 \\
-& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \, distribution) \\
-\end{align*}
-$$
-
-(n is the length of the key, and M is the probability distributions on possible messages.)
-
-This formula means that <br>
-for every algorithm EVE, the probability that EVE gets plaintext m by using encryption of k and m is 0. 
- 
-However, this is impossible, and there is tiny advantage than 0. <br>
-Therefore, we need to fix this formula as follows.  
-
-$$
-\begin{align*}
-& \forall EVE \\
-& Pr[EVE(Enc(k,m)) = m] \leq 1/|m| \\
-& k \leftarrow Gen(1^n), \; m \leftarrow M(=probability \; distribution(uniform \; over \; some \; set)) \\
-\end{align*}
-$$
-
-Is this achievable ? <br>
-
-The answer is no. Message space is extraneous to us, so message space is not necessarily uniform. However, we can control the key space. <br>
-We need some refinement to this formula. 
+따라서 PRG라는 함수를 활용한 OTP는 아래 그림과 같다. 
+<img src = "./prologue/figure1.png" width = "500"> <br>
+OTP에서는 암호화 키가 메세지 만큼 길어야 했지만, 이번에는 상당히 짧은 K를 사용한다. 이를 위해 PRG(K)를 계산하면 그 결과 값은 K를 활용한 랜덤인 것처럼 보이는 적절한 길이의 키가 생성된다. 이 값을 메세지 M과 XOR 연산을 하여 기존의 OTP 방식처럼 암호화를 수행할 수 있다. 공식으로 나타내면,  E(K,M) = M XOR PRG(K), D(K,C) = C XOR PRG(K)이다. 그렇다면 Stream Cipher도 perfect secrecy할까 ? <b>Stream Cipher는 키의 길이를 짧게 했기 때문에 perfect하다고 볼 수 없다. </b> <br>
+그렇다면 perfect하지 않은 걸 왜 사용하는지 의문을 갖을 수 있다. 이를 위해서는 stream cipher의 안전성에 대한 기준을 재정립해야 한다. Stream cipher의 안전성은 사용했던 PRG 함수의 예측불가능성 여부(Unpredictable)에 의해 좌우된다. 따라서 예측가능성, 즉 Predictability를 이해해야 한다. <br>
 
 
-
-<br>
-### Shannon’s Perfect Secrecy Definition
-<br>
-<img src = "./lecture_1/figure3.png" width = "500">
-<br>
-
-Before watching this definition, we need to know the basic meaning of conditional probability. 
-
-
-$$
-\begin{align*}
-&P(A|B) = \frac {P(A \cap B)}{P(B)}
-\end{align*}
-$$
-
-It refers to the probability that event A will occur when event B occurs.
-
-Key idea is that you compare two worlds. <br>
-
-* A-posteriori world
-    * The adversary sees the ciphertext that goes through the channel, and trying to guess the message. 
-    * A-posteriori probability that the mesage is equal to plaintext conditioned on the fact that EVE saw the ciphertext. 
-* A-priori world 
-    * This is the world that the adversary does not see anything at all, and just guess. 
-
-A-posteriori = A-priori <br>
-means that seeing the ciphertext does not matter at all. 
-This is the theme that will come up again and again in cryptography. We compare two worlds. One, the real world, where the adversary has some information, which is the ciphertext. 
-And Other, the ideal world where the adversary has no information.
-We want to say that the adversary learns no more in the real world than in ideal world. 
-
-### Perfect Indistinguishability Definition
-<br>
-<img src = "./lecture_1/figure4.png" width = "500">
-<br>
-
-Perfect indistinguishability definition is equivalent to perfect secrecy. <br>
-Perfect indistinguishability is similar to a Turing test. <br>
-
-She is given one of the two boxes and needs to decide which box am I interacting. <br> 
-The goal of the adversary is that trying to be a distinguisher, so that she can guess which world she is in.  <br>
-In each world, keys are generated randomly from a probability distribution, so keys are not the same. <br>
-
-Cool thing is that these two definitions are equivalent. <br>
-An encrption scheme (Gen, Enc, Dec) satisfies perfect secrecy IFF it satisfies perfect indistinguishability.
-<br>
-
-### One-time pad
-Can we achieve perfect secrecy ? 
-The answer is yes by using the one-time pad.<br>
-One-time pad has two properties. 
-
-* correctness
-    * The first property of one-time pad that we should confirm is that the receiver does indeed recover the intended plaintext when decrypting the ciphertext. 
-* security
-
-Reusing a one-time pad is not perfectly secret. 
-
-### Limitation
-Perfect secrecy is achievable, but has its price. <br>
-Any perfectly secure encryption scheme needs keys that are at least as long as the messages. <br>
-Therefore, we need to relax the definition. <br>
-
-EVE is an arbitrary <b>compuatationally bounded </b> algorithm.  <br>
-= EVE is a polynomial time algorithm <br>
 
