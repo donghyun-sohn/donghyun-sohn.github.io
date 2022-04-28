@@ -58,7 +58,7 @@ The idea : The predictor is given the first i-1 pseudorandom bits (call it y1y2,
 
 $Pr[P(y1, ..., yi-1)=yi]>=1/2+1/p(n)$ <br>
 We want the probability that P given y1 up to yi-1 predicts yi, and want this bigger than half + poly. <br>
-$Pr[P(y1, ..., y-1)=yi] \; = \; Pr1[D(y1,..yi-1 \, b \, ui+1, ... um) = 1 \, &b=yi]+Pr2[D(y1,..yi-1 \, b \, ui+1, ... um) = 0 \, \and b\ne yi], where \; b \; is \; random \; bit$ <br>
+$Pr[P(y1, ..., y-1)=yi] \; = \; Pr1[D(y1,..yi-1 \, b \, ui+1, ... um) = 1 \, \and b=yi]+Pr2[D(y1,..yi-1 \, b \, ui+1, ... um) = 0 \, \and b\ne yi], where \; b \; is \; random \; bit$ <br>
 
 Pr1 means that b, the bit that I fed him is the right bit and the guys say 1, then I will put b <br>
 Pr2 means that b, the bit that I fed him is the wrong bit and the guys say 0, then I will take the b and flip it. <br>
