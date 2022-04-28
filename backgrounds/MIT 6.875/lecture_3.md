@@ -38,7 +38,7 @@ Really important to know new proof technique : Hybrid Arguments <br>
 <img src = "./lecture_3/figure2.png" width = "500"> <br>
 
 Last time, we looked at the def 1. So today, we will look at def 2. <br>
-<img src = "./lecture_3/figure3 .png" width = "500"> <br>
+<img src = "./lecture_3/figure3.png" width = "500"> <br>
 
 For every ith bit, the guy cannot predict the ith bit given the first i-1 bits, the guy cannot predict it better than half. <br>
 
@@ -56,9 +56,9 @@ The idea : The predictor is given the first i-1 pseudorandom bits (call it y1y2,
 
 #### Analysis of the predictor P
 
-$Pr[P(y1, ..., y-1)=yi]>=1/2+1/p(n)$ <br>
+$Pr[P(y1, ..., yi-1)=yi]>=1/2+1/p(n)$ <br>
 We want the probability that P given y1 up to yi-1 predicts yi, and want this bigger than half + poly. <br>
-$Pr[P(y1, ..., y-1)=yi] \; = \; Pr1[D(y1,..yi-1 \, b \, ui+1, ... um) = 1 \, &b=yi]+Pr2[D(y1,..yi-1 \, b \, ui+1, ... um) = 0 \, &b\ne yi], where \; b \; is \; random \; bit$ <br>
+$Pr[P(y1, ..., y-1)=yi] \; = \; Pr1[D(y1,..yi-1 \, b \, ui+1, ... um) = 1 \, &b=yi]+Pr2[D(y1,..yi-1 \, b \, ui+1, ... um) = 0 \, \and b\ne yi], where \; b \; is \; random \; bit$ <br>
 
 Pr1 means that b, the bit that I fed him is the right bit and the guys say 1, then I will put b <br>
 Pr2 means that b, the bit that I fed him is the wrong bit and the guys say 0, then I will take the b and flip it. <br>
@@ -68,6 +68,17 @@ $Pr[b=yi] = 1/2, Pr[b \ne yi]= 1/2$ , therefore <br>
 $= 1/2(Pr[D(y1,..yi-1 \, b \, ui+1, ... um) = 1 \, |b=yi]+Pr[D(y1,..yi-1 \, b \, ui+1, ... um) = 0 \, |b\ne yi])$ <br>
 Like this, it follows the below equation. <br>
 <img src = "./lecture_3/figure5.png" width = "500"> <br>
+
+### Length extension : One bit to Many bits 
+
+Let G: 〖{0,1}〗^𝑛  →〖{0,1}〗^(𝑛+1) be a pseudorandom generator. <br>
+Goal: use G to generate poly many pseudorandom bits. <br> 
+<img src = "./lecture_3/figure6.png" width = "500"> <br>
+First, we generate n+1 bit, which is y1. b1 is one bit, and s1 is last n bits. 
+<img src = "./lecture_3/figure7.png" width = "500"> <br>
+This is called a <b>stream cipher</b>. You can stretch n bits to any polynomial bit. <br>
+<img src = "./lecture_3/figure8.png" width = "500"> <br>
+
 
 
 
