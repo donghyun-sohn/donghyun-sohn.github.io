@@ -75,4 +75,6 @@ G가 예측가능하면 취약하기 때문에, 해당 PRG는 암호를 구현�
 
 Negligible과 non-negligible에 대한 개념은 암호학 연구자 그룹과 실무자 그룹 사이에서 바라보는 시각에 약간의 온도차가 있다. 연구자들은 ε가 1/2^30 (십억분의 1) 보다 큰 값이라면 이는 무시할 수 없는 값(Non-negligible)이라고 한다. 이 값이 매우 커보이지만, 1GB의 데이터가 2^30 ~ 2^32 정도이기 때문에 실제 우리의 실생활에서 상당히 현실적인 기준이다. 반대로, 1/ 2^80 보다 작은 값인 경우에는 현실적인 시간안에 발생할 가능성이 매우 드물다고 보기 때문에, Negligible(무시해도 좋은) 이벤트라고 정의한다. 이러한 정의는 약간의 오차가 발생한다는 점을 감안해야 한다. 조금 더 엄격하게 암호학 이론을 연구하는 사람들은 ε을 단순히 scalar 값으로 보는 것이 아니라, 하나의 function 으로 정의한다. 일종의 다항식 시간에 대입하여 λ값을 계산한다고 했을 때의 ε을 비교하는 방식이다.
 
+읽으면 좋은 블로그 : [http://ai-allenk.blogspot.com/search/label/cryptography?max-results=1](http://ai-allenk.blogspot.com/search/label/cryptography?max-results=1)
+
 
