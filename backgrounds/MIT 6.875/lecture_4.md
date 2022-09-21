@@ -30,4 +30,4 @@ Let's mathematically formulize this. <br>
 
 <img src = "./lecture_4/figure4.png" width = "500"> <br>
 
-In the pseudornadom world, there is polynomial time algorithm D that gets access to a function chosen from pseudorandom family. $f$ is chosen randomly from $F_{l}$, which is the family of functions. 
+In the pseudornadom world, there is polynomial time algorithm D that gets access to a function chosen from pseudorandom family. $f$ is chosen randomly from $F_{l}$, which is the family of functions.  
