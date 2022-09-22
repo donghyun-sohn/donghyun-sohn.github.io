@@ -3,7 +3,7 @@ menu:
 - {name: 'Publications', url: '/publications'}
 - {name: 'CV', url: '/cv/Donghyun_Sohn_CV.pdf'}
 - {name: 'Backgrounds', url: '/backgrounds'}
-- {name: 'Blogs', url: '/blogs'}
+#- {name: 'Blogs', url: '/blogs'}
 
 backgrounds:
 - {name: 'Data Systems Seminar (Fall 2022)', url: 'Data Systems Seminar'}
