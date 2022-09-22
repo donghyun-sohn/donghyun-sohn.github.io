@@ -10,8 +10,6 @@ Lecture link : [https://github.com/crottyan/cs496-f22](https://github.com/crotty
 
 ### Lecture Notes
 
-[Prologue](/backgrounds/Data Systems Seminar/prologue)
-
 [Lecture 1](/backgrounds/Data Systems Seminar/lecture_1)
 
 [Lecture 2](/backgrounds/Data Systems Seminar/lecture_2)

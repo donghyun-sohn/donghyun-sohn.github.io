@@ -92,6 +92,3 @@ Dynamic hash tables resize themselves on demand
   
 Drawbacks of hash tables :<br>
 <b>Only do point query, and can not do range query</b>
-
-
-<img src = "./lecture_1/figure1.png" width = "500">
