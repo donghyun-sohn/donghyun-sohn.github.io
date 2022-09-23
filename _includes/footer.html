@@ -4,9 +4,9 @@
       {% for item in site.data.settings.social %}
         <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
       {% endfor %}
-    </div>
+    </div class="col-md-6">
       {% for item in site.data.settings.academic %}
-        <a href="{{ item.link }}"><i class="ai ai-google-scholar"></i></a>
+        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="ai ai-google-scholar"></i></a>
       {% endfor %}
   </div>
 </footer>
