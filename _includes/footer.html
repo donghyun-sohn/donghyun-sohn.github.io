@@ -5,10 +5,8 @@
         <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
       {% endfor %}
     </div>
-    <i class="fa fa-check">
       {% for item in site.data.settings.academic %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="ai ai-google-scholar-square fa-3x"></i></a>
+        <a href="{{ item.link }}"><i class="ai ai-google-scholar"></i></a>
       {% endfor %}
-    </i>
   </div>
 </footer>
