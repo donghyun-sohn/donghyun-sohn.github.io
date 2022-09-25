@@ -7,6 +7,7 @@ menu:
 
 backgrounds:
 - {name: 'Data Systems Seminar (Fall 2022)', url: 'Data Systems Seminar'}
+- {name: 'Database Basics', url: 'Database Basics'}
 #- {name: 'CMU 15-445/645 Intro to Database Systems (Fall 2021)', url: 'CMU 15.445.645'}
 #- {name: 'MIT 6.875 Foundations of Cryptography (Fall 2021)', url: 'MIT 6.875'}
 
