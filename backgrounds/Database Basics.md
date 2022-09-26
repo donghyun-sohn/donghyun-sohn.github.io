@@ -3,6 +3,6 @@ layout: page
 title: "Database Basics"
 ---
 
-### Lecture Notes
+### Title
 
-[Lecture 1](/backgrounds/Database Basics)
+[Query Processing](/backgrounds/Database Basics/Query Processing)
