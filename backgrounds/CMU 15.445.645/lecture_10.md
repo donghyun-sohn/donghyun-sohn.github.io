@@ -56,3 +56,23 @@ Executing order is below <br>
   - In the above figure, we need to wait to execute the right side of the query(the probe pahse of the join) until left side of the query(the build phase) has emitted all of the tuples
 - Output control works easily with this approach
   - like LIMIT Clause
+
+##  Materialization Model
+Each operator processes its input all at once and then emits its output all at once
+- The operator "materializes" its output as a single result
+- The DBMS can push down hints (e.g. LIMIT) to avoid scanning too many tuples
+- Can send either a materialized row or a single column
+
+The output can be either whole tuples (NSM) or subsets of columns (DSM)
+### Example
+<img src = "./lecture_10/figure3.png" width = "300"> <br>
+Extreme opposite of operator at a time processing <br>
+Do the entire operation on every single tuple for that operator, and we done with it then move on to the next operator
+
+### When tuple at a time iterator based processing is good ? 
+Better for OLTP workloads
+- queries only access a small number of tuples at a time
+  - Lower execution / coordination overhead
+  - Fewer function calls
+
+<u>Not good for OLAP queries with large intermediate results</u> <br>

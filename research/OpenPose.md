@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "A real-time monitoring system using OpenPose"
+title: "OpenPose"
 ---
 
 # A real-time monitoring system using OpenPose

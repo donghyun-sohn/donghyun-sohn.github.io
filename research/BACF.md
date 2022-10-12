@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Disk-based BACF Tree for Clustering Massive Dataset"
+title: "BACF"
 ---
 
 # Disk-based BACF Tree for Clustering Massive Dataset
