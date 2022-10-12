@@ -12,4 +12,6 @@ Lecture link : [https://15445.courses.cs.cmu.edu/fall2021/](https://15445.course
 
 [Lecture 9 : Join Algorithms](/backgrounds/CMU 15.445.645/lecture_9)
 
+[Lecture 10 : Query Execution 1](/backgrounds/CMU 15.445.645/lecture_10)
+
 
