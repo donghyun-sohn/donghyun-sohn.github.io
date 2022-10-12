@@ -5,7 +5,7 @@ title: "BACF"
 
 # Disk-based BACF Tree for Clustering Massive Dataset
 
-## Project Explanation</h1> <br>
+## Project Explanation <br>
 
 The main idea comes from <a href="https://www2.cs.sfu.ca/CourseCentral/459/han/papers/zhang96.pdf">BIRCH Clustering</a> and <a href="http://www.vldb.org/conf/1997/P406.PDF">Buffer Tree</a> Paper. <br>
 Birch is a memory-based clustering algorithm that constructs a CF Tree to calculate clusters and repeatedly reconstructs the cf tree when the memory size is limited compared to the data size. <br>
@@ -50,7 +50,7 @@ After building BACF Tree and Birch's CF Tree, information of leaf nodes written 
 If we look at the experimental results, we can find out the fact that BACF Tree gets better purity and recall of cluster than Birch's CF Tree.
 <br><br>
             
-### <a href = "https://drive.google.com/file/d/1w2K4jLtbCdbh2gHPlxWsVqZCpNaVkEU_/view?usp=sharing">[Publication]</a> : Korean Software Congress 2021 (Encouragement Prize)</h1>
+### <a href = "https://drive.google.com/file/d/1w2K4jLtbCdbh2gHPlxWsVqZCpNaVkEU_/view?usp=sharing">[Publication]</a> : Korean Software Congress 2021 (Encouragement Prize)
             
-### <a href = "https://github.com/bulelion37/Disk-based-BACF-Tree">[Code]</a></h1>
+### <a href = "https://github.com/bulelion37/Disk-based-BACF-Tree">[Code]</a>
             

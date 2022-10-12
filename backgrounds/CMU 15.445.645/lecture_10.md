@@ -76,3 +76,105 @@ Better for OLTP workloads
   - Fewer function calls
 
 <u>Not good for OLAP queries with large intermediate results</u> <br>
+
+## Vectorization Model
+Like the Iteratol Model where each operator implements a Next() function, but <br>
+Each operator emits a batch of tuples instead of a single tuple
+- The operator's internal loop processes multiple tuples at a time
+- The size of the batch can vary based on hardware or query properties
+
+### Example
+<img src = "./lecture_10/figure4.png" width = "300"> <br>
+It seems hybrid of iterator model and materialization model. 
+
+### Advantages
+- Ideal for OLAP queries because it greatly reduces the number of invocations per operator
+- Allows for operators to more easily use vectorized (SIMD) instructions to process batches of tuples
+
+## Plan Processing Direction
+1. <b> Top-to-Bottom (pull-based model) : In most case </b>
+    - Start with the root and "Pull" data up from its children 
+    - Tuples are always passed with function calls
+2. Bottom-to-Top
+    - Start with leaf nodes and push data to their parents
+    - Allows for tighter control of caches/registers in pipelines
+    - Advantages : when you have tighter control of caching and registers during your query processing, it is much better to pipeline the data
+
+# Access Methods
+An access method is the way that the DBMS accesses the data stored in a table
+- Not defined in relational algebra
+
+Three basic approaches :
+- Sequential Scan
+- Index Scan
+- Multi-Index / Bitmap Scan
+
+## Sequential Scan 
+For each page in the table : 
+- Retrieve it from the buffer pool
+- Iterate over each tuple and check whether to include it
+
+The DBMS maintains an internal cursor that tracks the last page / slot it examined
+
+### Optimizations
+This is almost always the worst thing that the DBMS can do to execute a query
+
+Sequential Scan Optimizations :
+- Prefetching
+- Buffer Pool Bypass
+- Parallelization
+- Heap Clustering
+- Zone Maps
+- Late Materialization
+
+#### Zone Maps
+Pre-computed aggregates for the attribute values in a page. DBMS checks the zone map first to decide whether it wants to access the page. <br>
+
+Examples <br>
+<img src = "./lecture_10/figure5.png" width = "300"> <br>
+In this query, after watching zone maps, we can decide that we don't need to scan the original data. Because the max is 400, so no value in the original data. <br>
+
+Problem <br>
+Everytime you update the tuple, have to update the zone maps. 
+
+#### Late Materialization
+DSM(Column-Store Model) DBMSs can delay stitching together tuples until the uppe rparts of the query plan. <br><br>
+Examples <br>
+<img src = "./lecture_10/figure6.png" width = "300"> <br>
+
+## Index Scan
+The DBMS picks an index to find the tuples that the query needs <br>
+
+Which index to use depends on:
+- What attributes the index contains
+- What attributes the query references
+- The attributes the query references
+- Predicate composition
+- Whether the index has unique or non-unique keys
+
+Examples <br>
+<img src = "./lecture_10/figure7.png" width = "300"> <br>
+
+## Multi-Index SCan
+If there are multiple indexes that the DBMS can use for a query :
+- Computer sets of Record IDs using each matching index
+- Combine these sets based on the query's predicates (union vs intersect)
+- Retrieve the records and apply any remaining predicates
+
+Postgres calls this Bitmpa Scan <br>
+
+Examples <br>
+<img src = "./lecture_10/figure8.png" width = "300"> <br>
+
+# Modification Queries 
+<img src = "./lecture_10/figure9.png" width = "300"> <br>
+<img src = "./lecture_10/figure10.png" width = "300"> <br>
+
+# Expression Evaluation
+<img src = "./lecture_10/figure11.png" width = "300"> <br>
+<img src = "./lecture_10/figure12.png" width = "300"> <br>
+
+# Conclusion
+- The same query plan can be exeucted in multiple different ways
+- (Most) DBMSs will want to use index scans as much as possible rather than full table scan
+- Expression trees are flexible but slow
