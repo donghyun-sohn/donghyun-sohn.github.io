@@ -1,4 +1,4 @@
 ---
 layout: research
-title: "research"
+title: "Research"
 ---
