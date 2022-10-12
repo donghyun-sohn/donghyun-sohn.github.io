@@ -6,8 +6,8 @@ menu:
 #- {name: 'Blogs', url: '/blogs'}
 
 research:
-- {name: 'Disk-based BACF Tree for Clustering Massive Dataset', url: '/BACF'}
-- {name: 'A real-time monitoring system using OpenPose', url: '/OpenPose'}
+- {name: 'Disk-based BACF Tree for Clustering Massive Dataset', url: 'BACF'}
+- {name: 'A real-time monitoring system using OpenPose', url: 'OpenPose'}
 
 backgrounds:
 - {name: 'Data Systems Seminar (Fall 2022)', url: 'Data Systems Seminar'}
