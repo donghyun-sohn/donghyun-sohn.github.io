@@ -1,34 +1,15 @@
 ---
 layout: page
-title: "CMU CMU 15.445.645 Intro to Database Systems (Fall 2021)"
+title: "CMU 15.445.645 Intro to Database Systems (Fall 2021)"
 ---
 
-#### Course Information
+### Notice
 
-[Course Outline](/backgrounds/CMU 15.445.645/Sample_Course_Outline.pdf)
+This posting is based on Prof. Andy Pavlo's CMU 15.445.645 Intro to Database Systems (Fall 2021) lecture. <br>
+Lecture link : [https://15445.courses.cs.cmu.edu/fall2021/](https://15445.courses.cs.cmu.edu/fall2021/)
 
-#### Lecture Notes
+### Lecture Notes
 
-[Lecture 1](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
+[Lecture 9 : Join Algorithms](/backgrounds/CMU 15.445.645/lecture_9)
 
-[Lecture 2](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
 
-[Lecture 3](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
-
-#### Homework
-
-[Homework 1](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
-
-[Homework 2](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
-
-[Homework 3](/backgrounds/CMU 15.445.645/Sample_Lecture_Notes.pdf)
-
-#### Midterms
-
-[Midterm 1](/backgrounds/CMU 15.445.645/Sample_Midterm.pdf)
-
-[Midterm 2](/backgrounds/CMU 15.445.645/Sample_Midterm.pdf)
-
-#### Exams
-
-[Exam 1](/backgrounds/CMU 15.445.645/Sample_Exam.pdf)
