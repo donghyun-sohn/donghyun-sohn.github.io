@@ -2,7 +2,7 @@
 layout: page
 title: "CMU 15.445.645 - Lecture 13 : Query Planning & Optimization 1"
 author: "Donghyun Sohn"
-date: "2022/10/2"
+date: "2022/10/12"
 tags:
   - DB
 use_math: true

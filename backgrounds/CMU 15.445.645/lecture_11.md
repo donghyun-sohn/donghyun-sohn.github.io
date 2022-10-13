@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CMU 15.445.645 - Lecture 10 : Query Execution 1"
+title: "CMU 15.445.645 - Lecture 11 : Query Execution 1"
 author: "Donghyun Sohn"
 date: "2022/10/11"
 tags:

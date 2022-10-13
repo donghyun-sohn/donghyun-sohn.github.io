@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CMU 15.445.645 - Lecture 9 : Join Algorithms"
+title: "CMU 15.445.645 - Lecture 10 : Join Algorithms"
 author: "Donghyun Sohn"
 date: "2022/10/11"
 tags:
