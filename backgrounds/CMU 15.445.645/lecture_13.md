@@ -89,7 +89,7 @@ Reiterate the concept of relation algebra equivalence, two expressions that we c
 <img src = "./lecture_13/figure7.png" width = "300"> <br>
 For a set of predicates, we are going to <u>break it down to individual predicates</u>. And then push individual predicates down to the <u>position that is closest to where you access the table</u>. <br> 
 There could be also some simplifications you can do by just looking at these predicates. <br>
-For example, if you have predicates $X=Y AND Y=3$, you can use linear algebra rules to rewrite this predicate to be $X=3 AND Y=3$. <br>
+For example, if you have predicates $X=Y \text{ AND } Y=3$, you can use linear algebra rules to rewrite this predicate to be $X=3 \text{ AND } Y=3$. <br>
 This is pretty naive, but this could be useful <br>
 For example, let's assume that X and Y came from different tables. If you have the predicate in the first way, you can only push down one predicate($Y=3$). But in the second case, you can push two predicates($X=3, Y=3$) <br>
 <img src = "./lecture_13/figure8.png" width = "300"> <br>
