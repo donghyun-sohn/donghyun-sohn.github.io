@@ -34,11 +34,10 @@ In addition, performance evaluation on the web was also conducted, and the exper
 The first experiment was conducted with a site refresh cycle of 3,000 ms. As a result, it was found that it had an accuracy of 80.66%. To increase the accuracy more, we checked calculation time to analyze the posture of one, and it was confirmed that it took 297ms on average. Since the system reflects the results of the four frames, we modified that the site refresh cycle to 1,200ms, and the accuracy was 85.75%, which is higher than that of the previous experiment.
 <br><br>
             
-<b>Performance Video : </b><br><br>
+<b>Performance Video : </b><br>
 
-[![Outdoor Performing](https://github.com/donghyun-sohn/donghyun-sohn.github.io/blob/main/research/OpenPose/performance1.png)](https://www.youtube.com/embed/OAN3FoFmoYg "Outdoor Performing")
-
-[![Indoor Performing](https://github.com/donghyun-sohn/donghyun-sohn.github.io/blob/main/research/OpenPose/performance2.png)](https://www.youtube.com/embed/e_UF0g3J_J4 "Indoor Performing")
+<a href = "https://www.youtube.com/embed/OAN3FoFmoYg">[Outdoor Performing]</a> <br>
+<a href = "https://www.youtube.com/embed/e_UF0g3J_J4">[Indoor Performing]</a> <br>
 
 <br><br>
 ### <a href = "https://drive.google.com/file/d/1rDPtMzLQ1CT7NQP95L0vHKeRt4iYSX-N/view?usp=sharing">[Publication]</a> : Korean Software Congress 2021 (Excellence Prize)
