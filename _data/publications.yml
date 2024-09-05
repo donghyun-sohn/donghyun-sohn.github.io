@@ -1,19 +1,31 @@
 featured:
-- {name: 'Disk-based BACF Tree for Clustering Massive Datasets.'
+- {name: 'Everything You Always Wanted to Know About
+          Secure and Private Database Systems (but were Afraid to Ask)'
+    , url: 'http://sites.computer.org/debull/A24june/p3.pdf',
+    description: '<b>Donghyun Sohn</b>, Xiling Li, Jennie Rogers <br> Data Engineering Bulletin 2023'
+    
+}
+- {name: 'Disk-based BACF Tree for Clustering Massive Datasets'
     , url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035989',
     description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021. <b>(Encouragement Prize)</b>'
     
 }
-- {name: 'A real-time monitoring system using OpenPose.', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
+- {name: 'A real-time monitoring system using OpenPose', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
     description: '<b>Donghyun Sohn</b>, Jinwon Jung, Hyungjoon Kwon, Donghyuk Jeong, Dayoung Yoon, Myungwan Koo <br> Korea Software Congress 2021. <b>(Excellence Prize)</b>'
 }
 
 index:
-- {name: 'Disk-based BACF Tree for Clustering Massive Datasets.'
+- {name: 'Everything You Always Wanted to Know About
+          Secure and Private Database Systems (but were Afraid to Ask)'
+    , url: 'http://sites.computer.org/debull/A24june/p3.pdf',
+    description: '<b>Donghyun Sohn</b>, Xiling Li, Jennie Rogers <br> Data Engineering Bulletin 2023'
+    
+}
+- {name: 'Disk-based BACF Tree for Clustering Massive Datasets'
     , url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035989',
     description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021. <b>(Encouragement Prize)</b>'
     
 }
-- {name: 'A real-time monitoring system using OpenPose.', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
+- {name: 'A real-time monitoring system using OpenPose', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
     description: '<b>Donghyun Sohn</b>, Jinwon Jung, Hyungjoon Kwon, Donghyuk Jeong, Dayoung Yoon, Myungwan Koo <br> Korea Software Congress 2021. <b>(Excellence Prize)</b>'
 }
