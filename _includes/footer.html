@@ -1,12 +1,11 @@
 <footer class="pt-5 my-5 text-muted border-top">
   <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
+    <div class="col-md-12 text-end social-media-icons">
       {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
+        <a href="{{ item.link }}" class="ms-3 fs-5" title="{{ item.icon | capitalize }}" target="_blank">
+          <i class="{% if item.icon == 'scholar' %}ai ai-google-scholar{% else %}fab fa-{{ item.icon }}{% endif %}"></i>
+        </a>
       {% endfor %}
-    </div class="col-md-6">
-      {% for item in site.data.settings.academic %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="ai ai-google-scholar"></i></a>
-      {% endfor %}
+    </div>
   </div>
 </footer>
