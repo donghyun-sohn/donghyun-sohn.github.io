@@ -1,6 +1,11 @@
 featured:
+- {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
+    , url: '#',
+    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> VLDB 2025'
+    
+}
 - {name: 'Everything You Always Wanted to Know About
-          Secure and Private Database Systems (but were Afraid to Ask)'
+Secure and Private Database Systems (but were Afraid to Ask)'
     , url: 'http://sites.computer.org/debull/A24june/p3.pdf',
     description: '<b>Donghyun Sohn</b>, Xiling Li, Jennie Rogers <br> Data Engineering Bulletin 2023'
     
@@ -15,8 +20,13 @@ featured:
 }
 
 index:
+- {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
+    , url: '#',
+    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> VLDB 2025'
+    
+}
 - {name: 'Everything You Always Wanted to Know About
-          Secure and Private Database Systems (but were Afraid to Ask)'
+Secure and Private Database Systems (but were Afraid to Ask)'
     , url: 'http://sites.computer.org/debull/A24june/p3.pdf',
     description: '<b>Donghyun Sohn</b>, Xiling Li, Jennie Rogers <br> Data Engineering Bulletin 2023'
     
