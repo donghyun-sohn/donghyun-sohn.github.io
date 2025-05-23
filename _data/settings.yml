@@ -17,7 +17,7 @@ backgrounds:
 #- {name: 'MIT 6.875 Foundations of Cryptography (Fall 2021)', url: 'MIT 6.875'}
 
 social:
-- {icon: 'github', link: 'https://github.com/donghyun-sohn'}
-- {icon: 'twitter', link: 'https://twitter.com/Dustin_DHSohn'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/bulelion37/'}
-- {icon: 'scholar', link: 'https://scholar.google.com/citations?user=xp3ZJPgAAAAJ&hl=en'}
+- {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}
+- {icon: 'twitter', link: 'https://twitter.com/Dustin_DHSohn', title: 'Twitter'}
+- {icon: 'linkedin', link: 'https://linkedin.com/in/bulelion37/', title: 'LinkedIn'}
+- {icon: 'scholar', link: 'https://scholar.google.com/citations?user=xp3ZJPgAAAAJ&hl=en', title: 'Google Scholar'}
