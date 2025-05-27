@@ -1,7 +1,7 @@
 featured:
 - {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
     , url: '#',
-    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> VLDB 2025'
+    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> Proceedings of the VLDB Endowment, 2025.'
     
 }
 - {name: 'Everything You Always Wanted to Know About
@@ -12,7 +12,7 @@ Secure and Private Database Systems (but were Afraid to Ask)'
 }
 - {name: 'Disk-based BACF Tree for Clustering Massive Datasets'
     , url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035989',
-    description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021. <b>(Encouragement Prize)</b>'
+    description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021.'
     
 }
 - {name: 'A real-time monitoring system using OpenPose', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
@@ -22,7 +22,7 @@ Secure and Private Database Systems (but were Afraid to Ask)'
 index:
 - {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
     , url: '#',
-    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> VLDB 2025'
+    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> Proceedings of the VLDB Endowment, 2025.'
     
 }
 - {name: 'Everything You Always Wanted to Know About
@@ -33,7 +33,7 @@ Secure and Private Database Systems (but were Afraid to Ask)'
 }
 - {name: 'Disk-based BACF Tree for Clustering Massive Datasets'
     , url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035989',
-    description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021. <b>(Encouragement Prize)</b>'
+    description: '<b>Donghyun Sohn</b>, Sungwon Jung <br> Korea Software Congress 2021.'
     
 }
 - {name: 'A real-time monitoring system using OpenPose', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11036017',
