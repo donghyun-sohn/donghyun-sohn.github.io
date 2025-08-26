@@ -1,6 +1,6 @@
 featured:
 - {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
-    , url: '#',
+    , url: 'https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf',
     description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> Proceedings of the VLDB Endowment, 2025.'
     
 }
