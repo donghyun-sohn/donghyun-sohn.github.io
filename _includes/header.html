@@ -1,7 +1,7 @@
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <style>
     @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2');
-    p{
+    header p {
       font-family : 'YdestreetB', sans-serif;
       font-weight: normal;
       font-style: normal;
@@ -9,17 +9,17 @@
   </style>
   <div>
     <p>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
+    <a href="{{ site.baseurl }}/" class="d-flex align-items-center text-decoration-none">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
+    <a href="{{ site.baseurl }}/" class="d-flex align-items-center text-decoration-none">
       <span>{{ site.description }}</span>
     </a>
     </p>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      <a class="me-3 py-2 text-decoration-none" href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
   </nav>
 </header>
