@@ -77,33 +77,32 @@ a:hover { color: #555; }
 
 /* Research domains */
 .research-domain {
-  border-left: 2px solid #e8e8e8;
-  padding-left: 1.25rem;
+  margin-bottom: 3rem;
 }
-.domain-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+.domain-head {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
 }
-.domain-number {
-  font-size: 0.7rem;
+.domain-eyebrow {
+  font-size: 0.62rem;
   font-weight: 500;
+  letter-spacing: 0.1em;
   color: #bbb;
-  letter-spacing: 0.05em;
-  padding-top: 2px;
-  flex-shrink: 0;
-  width: 20px;
+  margin-bottom: 0.4rem;
 }
 .domain-title {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: #1a1a1a;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
 }
 .domain-desc {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: #888;
-  line-height: 1.5;
+  line-height: 1.55;
+  max-width: 520px;
 }
 
 /* Research cards */
@@ -127,6 +126,18 @@ a:hover { color: #555; }
 .badge-pub { background: #1a1a1a; color: #fff; }
 .badge-sub { background: #e8e8e8; color: #555; }
 .badge-wip { background: #f2f2f2; color: #999; }
+.badge-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+.badge-pub .badge-dot { background: #fff; }
+.badge-sub .badge-dot { background: #999; }
+.badge-wip .badge-dot { background: #ccc; }
 .r-stat { font-size: 0.7rem; font-weight: 500; color: #555; margin-bottom: 0.35rem; }
 .r-title { font-size: 0.85rem; font-weight: 500; color: #1a1a1a; margin-bottom: 0.4rem; line-height: 1.35; }
 .r-desc { font-size: 0.78rem; color: #666; line-height: 1.55; margin-bottom: 0.7rem; flex: 1; }
