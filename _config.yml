@@ -1,5 +1,5 @@
 url: "https://donghyun-sohn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/test" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 title: "Donghyun Sohn" # the name of your site, e.g. ACME Corp.
 description: " 손동현"
 

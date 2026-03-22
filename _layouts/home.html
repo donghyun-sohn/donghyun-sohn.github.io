@@ -1,60 +1,112 @@
 ---
 layout: default
 ---
-<div class="row g-5 mb-5">
-    <div class="col-md-5">
-        <h3 class="fw-bold">Bio</h3>
-            <img src="{{ site.github.url }}/assets/img/profile.jpg" alt="Home" width = "90%">
-        </div>
-        
-        <div class="col-md-7">
-        <br><br>
-        <p>
-          Hello! I'm Donghyun Sohn, a Ph.D. candidate in Computer Science at Northwestern University, working with 
-          <a href="http://users.eecs.northwestern.edu/~jennie/" target="_blank">Professor Jennie Rogers</a>. 
-          My research focuses on building secure and efficient data processing systems, especially at the intersection of databases and cryptography.
-        </p>
-        <p>
-          I develop practical query engines that support secure execution using cryptographic techniques such as secure multi-party computation (MPC) and fully homomorphic encryption (FHE). 
-          My work tackles real-world challenges in private data analytics—ensuring that even sensitive queries can be executed efficiently without compromising security.
-        </p>
-        <p>
-          While my core expertise lies in secure data infrastructure, I'm also broadly interested in making AI systems more efficient and resource-aware. 
-          This includes optimizing the dataflow and execution of AI workloads, especially under privacy or deployment constraints. 
-          I often explore how systems techniques—like query optimization, cost-based planning, and hardware-aware execution—can improve the performance and scalability of AI and analytics workloads alike.
-        </p>
-        <p>
-          I'm passionate about systems that actually run—my work is implemented in open-source projects and regularly evaluated on cloud environments like AWS. 
-          I enjoy bridging research and practice, working across the full stack from low-level execution details to high-level design decisions.
-        </p>
-        <p>
-          Email: <a href="mailto:donghyun.sohn@u.northwestern.edu">donghyun.sohn@u.northwestern.edu</a>
-        </p>
-        
-        </div>
-</div>
 
-<!--
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
-    {{ content }}
+<!-- Hero Section -->
+<div class="row mb-5">
+  <div class="col-lg-8 col-md-7">
+    <p class="text-uppercase text-muted small fw-semibold ls-wide mb-2">PhD Candidate · Northwestern University</p>
+    <h1 class="hero-name mb-1">Donghyun Sohn</h1>
+    <p class="text-muted mb-3" style="font-size:0.9rem">Database Systems &amp; Privacy-Preserving Computation</p>
+    <p class="hero-bio mb-4">
+      I build query engines that process sensitive data without ever seeing it —
+      combining MPC and FHE with classical query optimization techniques.
+      My systems achieve up to <strong>100&times;</strong> speedup in secure query execution,
+      implemented in open-source and benchmarked on AWS.
+    </p>
+    <div class="hero-links d-flex flex-wrap gap-2">
+      <a href="mailto:donghyun.sohn@u.northwestern.edu" class="hero-pill">Email</a>
+      <a href="https://github.com/donghyun-sohn" class="hero-pill">GitHub</a>
+      <a href="https://linkedin.com/in/bulelion37" class="hero-pill">LinkedIn</a>
+      <a href="{{ site.baseurl }}/cv/Donghyun_Sohn_CV.pdf" class="hero-pill">CV</a>
+    </div>
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" width="100%">
+  <div class="col-lg-4 col-md-5 text-center mt-4 mt-md-0">
+    <img src="{{ site.baseurl }}/assets/img/profile.jpg" class="profile-img" alt="Donghyun Sohn">
   </div>
 </div>
--->
 
-{% include publications.html %}
+<!-- Stat Row -->
+<div class="stat-row row g-3 mb-5">
+  <div class="col-4">
+    <div class="stat-card">
+      <div class="stat-num">100×</div>
+      <div class="stat-label">query speedup (Alchemy)</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="stat-card">
+      <div class="stat-num">VLDB '25</div>
+      <div class="stat-label">top-tier DB publication</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="stat-card">
+      <div class="stat-num">3</div>
+      <div class="stat-label">active research systems</div>
+    </div>
+  </div>
+</div>
 
-<!--
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">News</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+<!-- News Section -->
+<div class="section-block mb-5">
+  <p class="section-label">News</p>
+  <div class="news-list">
+    {% for item in site.data.settings.news limit:5 %}
+    <div class="news-item">
+      <span class="news-date">{{ item.date }}</span>
+      <span class="news-text">{{ item.text }}</span>
+    </div>
     {% endfor %}
   </div>
 </div>
--->
+
+<!-- Research Cards Section -->
+<div class="section-block mb-5">
+  <p class="section-label">Research</p>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="r-card">
+        <span class="r-badge badge-pub">VLDB 2025</span>
+        <div class="r-stat">up to 100× speedup</div>
+        <div class="r-title">Alchemy: Oblivious Query Optimization</div>
+        <div class="r-desc">Protocol-agnostic optimization framework combining circuit-aware cost modeling with classical query optimization for MPC-based SQL execution.</div>
+        <div class="r-tags">
+          <span class="r-tag">MPC</span><span class="r-tag">Cost Model</span><span class="r-tag">Query Opt</span>
+        </div>
+        <div class="r-links">
+          <a href="https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf" class="r-link">Paper ↗</a>
+          <a href="https://github.com/donghyun-sohn" class="r-link">Code ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="r-card">
+        <span class="r-badge badge-sub">In Submission</span>
+        <div class="r-stat">OpenFHE · SIMD batching</div>
+        <div class="r-title">HAMMER: FHE Analytical Query Engine</div>
+        <div class="r-desc">Columnar engine for encrypted OLAP via SW/HW co-design. Hybrid FHE-to-MPC conversion layer reduces end-to-end overhead to 2–18%.</div>
+        <div class="r-tags">
+          <span class="r-tag">FHE</span><span class="r-tag">OpenFHE</span><span class="r-tag">OLAP</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="r-card">
+        <span class="r-badge badge-wip">In Progress</span>
+        <div class="r-stat">BIRD benchmark</div>
+        <div class="r-title">HSTG: Graph-based NL2SQL</div>
+        <div class="r-desc">Hierarchical schema-topology graph for NL→SQL translation. Addresses schema incompleteness as the structural bottleneck in LLM-based query generation.</div>
+        <div class="r-tags">
+          <span class="r-tag">NL2SQL</span><span class="r-tag">LLM</span><span class="r-tag">Schema Linking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Publications Section -->
+<div class="section-block mb-5">
+  <p class="section-label">Selected Publications</p>
+  {% include publications.html %}
+</div>
