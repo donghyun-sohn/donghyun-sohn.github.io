@@ -8,41 +8,18 @@ layout: default
     <p class="text-uppercase text-muted small fw-semibold ls-wide mb-2">PhD Candidate · Northwestern University</p>
     <h1 class="hero-name mb-1">Donghyun Sohn</h1>
     <p class="text-muted mb-3" style="font-size:0.9rem">Database Systems &amp; Privacy-Preserving Computation</p>
-    <p class="hero-bio mb-4">
-      I build query engines that process sensitive data without ever seeing it —
-      combining MPC and FHE with classical query optimization techniques.
-      My systems achieve up to <strong>100&times;</strong> speedup in secure query execution,
-      implemented in open-source and benchmarked on AWS.
-    </p>
+    <div class="hero-bio mb-4">
+      <p>I'm Donghyun Sohn, a Ph.D. candidate in Computer Science at Northwestern University, advised by Professor Jennie Rogers.</p>
+      <p>My research focuses on building secure and efficient data processing systems at the intersection of databases and cryptography. I develop practical query engines that support secure execution using cryptographic techniques such as secure multi-party computation (MPC) and fully homomorphic encryption (FHE) — ensuring that even sensitive queries can be executed efficiently without compromising security.</p>
+      <p>I'm also broadly interested in making database interfaces more intelligent, including natural language to SQL translation and schema-aware query generation. My work is implemented in open-source and regularly benchmarked on cloud infrastructure like AWS.</p>
+    </div>
     <div class="hero-links d-flex flex-wrap gap-2">
-      <a href="mailto:donghyun.sohn@u.northwestern.edu" class="hero-pill">Email</a>
-      <a href="{{ site.baseurl }}/cv/Donghyun_Sohn_CV.pdf" class="hero-pill">CV ↗</a>
+      <span class="hero-pill">donghyun.sohn@u.northwestern.edu</span>
+      <a href="/cv/Donghyun_Sohn_Resume.pdf" class="hero-pill">CV ↗</a>
     </div>
   </div>
   <div class="col-lg-3 col-md-4 mt-4 mt-md-0" style="display:flex; justify-content:center; align-items:flex-start; padding-top:0.5rem;">
-    <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="Donghyun Sohn" style="width: 140px; height: 140px; object-fit: cover; border-radius: 12px; border: 1px solid #eee; filter: grayscale(10%);">
-  </div>
-</div>
-
-<!-- Stat Row -->
-<div class="stat-row row g-3 mb-5">
-  <div class="col-4">
-    <div class="stat-card">
-      <div class="stat-num">100×</div>
-      <div class="stat-label">query speedup (Alchemy)</div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="stat-card">
-      <div class="stat-num">VLDB '25</div>
-      <div class="stat-label">top-tier DB publication</div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="stat-card">
-      <div class="stat-num">3</div>
-      <div class="stat-label">active research systems</div>
-    </div>
+    <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="Donghyun Sohn" style="width: 200px; height: 200px; object-fit: cover; border-radius: 12px; border: 1px solid #eee; filter: grayscale(10%);">
   </div>
 </div>
 
@@ -59,48 +36,90 @@ layout: default
   </div>
 </div>
 
-<!-- Research Cards Section -->
+<!-- Research Section -->
 <div class="section-block mb-5">
   <p class="section-label">Research</p>
-  <div class="row g-3">
-    <div class="col-md-4">
-      <div class="r-card">
-        <span class="r-badge badge-pub">VLDB 2025</span>
-        <div class="r-stat">up to 100× speedup</div>
-        <div class="r-title">Alchemy: Oblivious Query Optimization</div>
-        <div class="r-desc">Protocol-agnostic optimization framework combining circuit-aware cost modeling with classical query optimization for MPC-based SQL execution.</div>
-        <div class="r-tags">
-          <span class="r-tag">MPC</span><span class="r-tag">Cost Model</span><span class="r-tag">Query Opt</span>
-        </div>
-        <div class="r-links">
-          <a href="https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf" class="r-link">Paper ↗</a>
-          <a href="https://github.com/donghyun-sohn" class="r-link">Code ↗</a>
-        </div>
+
+  <!-- Domain 1 -->
+  <div class="research-domain mb-4">
+    <div class="domain-header mb-3">
+      <span class="domain-number">01</span>
+      <div>
+        <div class="domain-title">Cryptography × Database Systems</div>
+        <div class="domain-desc">Query optimization and systems engineering for privacy-preserving SQL execution using MPC and FHE.</div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="r-card">
-        <span class="r-badge badge-sub">In Submission</span>
-        <div class="r-stat">OpenFHE · SIMD batching</div>
-        <div class="r-title">HAMMER: FHE Analytical Query Engine</div>
-        <div class="r-desc">Columnar engine for encrypted OLAP via SW/HW co-design. Hybrid FHE-to-MPC conversion layer reduces end-to-end overhead to 2–18%.</div>
-        <div class="r-tags">
-          <span class="r-tag">FHE</span><span class="r-tag">OpenFHE</span><span class="r-tag">OLAP</span>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="r-card">
+          <span class="r-badge badge-pub">VLDB 2025</span>
+          <div class="r-title">Alchemy: Oblivious Query Optimization</div>
+          <div class="r-desc">Protocol-agnostic optimization framework combining circuit-aware cost modeling with classical query optimization for MPC-based SQL execution. Achieves up to 100× speedup across multiple cryptographic protocols.</div>
+          <div class="r-tags"><span class="r-tag">MPC</span><span class="r-tag">Cost Model</span><span class="r-tag">Query Optimization</span></div>
+          <div class="r-links"><a href="https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf" class="r-link">Paper ↗</a></div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="r-card">
-        <span class="r-badge badge-wip">In Progress</span>
-        <div class="r-stat">BIRD benchmark</div>
-        <div class="r-title">HSTG: Graph-based NL2SQL</div>
-        <div class="r-desc">Hierarchical schema-topology graph for NL→SQL translation. Addresses schema incompleteness as the structural bottleneck in LLM-based query generation.</div>
-        <div class="r-tags">
-          <span class="r-tag">NL2SQL</span><span class="r-tag">LLM</span><span class="r-tag">Schema Linking</span>
+      <div class="col-md-6">
+        <div class="r-card">
+          <span class="r-badge badge-sub">In Submission</span>
+          <div class="r-title">HAMMER: FHE Analytical Query Engine</div>
+          <div class="r-desc">OpenFHE-based columnar engine for encrypted OLAP workloads. Optimized via SIMD batching, multi-threading, and a hybrid FHE-to-MPC conversion layer. End-to-end overhead reduced to 2–18%.</div>
+          <div class="r-tags"><span class="r-tag">FHE</span><span class="r-tag">OpenFHE</span><span class="r-tag">OLAP</span><span class="r-tag">SW/HW Co-design</span></div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Domain 2 -->
+  <div class="research-domain mb-4">
+    <div class="domain-header mb-3">
+      <span class="domain-number">02</span>
+      <div>
+        <div class="domain-title">Database Performance & Differential Privacy</div>
+        <div class="domain-desc">Privacy-compliant performance regression testing for analytical query engines using statistical sketches and synthetic workloads.</div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="r-card">
+          <span class="r-badge badge-sub">Submitted · SeQureDB '26</span>
+          <div class="r-title">ScanTwin: Differential Privacy for OLAP Regression</div>
+          <div class="r-desc">Framework for generating DP-compliant synthetic datasets from Parquet footers for scan operator benchmarking. Extracts per-row-group sketches without accessing raw data.</div>
+          <div class="r-tags"><span class="r-tag">Differential Privacy</span><span class="r-tag">Parquet</span><span class="r-tag">DuckDB</span></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="r-card">
+          <span class="r-badge badge-wip">In Progress</span>
+          <div class="r-title">Extending ScanTwin to Full Operator Coverage</div>
+          <div class="r-desc">Generalizing the ScanTwin framework beyond scan operators to joins, aggregations, and filters — enabling end-to-end DP-safe performance regression across analytical query pipelines.</div>
+          <div class="r-tags"><span class="r-tag">Query Operators</span><span class="r-tag">Benchmarking</span><span class="r-tag">Privacy</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domain 3 -->
+  <div class="research-domain mb-4">
+    <div class="domain-header mb-3">
+      <span class="domain-number">03</span>
+      <div>
+        <div class="domain-title">AI × Databases</div>
+        <div class="domain-desc">Bridging large language models and structured query execution through schema-aware retrieval and grounded SQL generation.</div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="r-card">
+          <span class="r-badge badge-wip">In Progress</span>
+          <div class="r-title">HSTG: Hierarchical Schema-Topology Graph for NL2SQL</div>
+          <div class="r-desc">Graph-based schema linking for natural language to SQL translation. Targets schema incompleteness and opaque column naming as structural bottlenecks in LLM-based query generation. Evaluated on BIRD benchmark.</div>
+          <div class="r-tags"><span class="r-tag">NL2SQL</span><span class="r-tag">LLM</span><span class="r-tag">Schema Linking</span><span class="r-tag">BIRD</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- Publications Section -->

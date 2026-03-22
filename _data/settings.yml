@@ -20,8 +20,7 @@ news:
 - {date: 'Mar 2026', text: "ScanTwin paper submitted to SeQureDB '26 (co-located with ICDE, Bengaluru)"}
 - {date: '2025', text: 'Program Committee Member, SIGMOD Availability & Reproducibility Initiative 2025'}
 - {date: 'Fall 2025', text: 'Teaching Assistant, CS 339: Intro to Database Systems, Northwestern'}
-- {date: 'Mar 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
-- {date: '2024', text: 'Program Committee Member, SIGMOD ARI 2024'}
+- {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}

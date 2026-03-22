@@ -75,6 +75,37 @@ a:hover { color: #555; }
 }
 .news-text { font-size: 0.85rem; color: #333; line-height: 1.5; }
 
+/* Research domains */
+.research-domain {
+  border-left: 2px solid #e8e8e8;
+  padding-left: 1.25rem;
+}
+.domain-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.domain-number {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #bbb;
+  letter-spacing: 0.05em;
+  padding-top: 2px;
+  flex-shrink: 0;
+  width: 20px;
+}
+.domain-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 0.2rem;
+}
+.domain-desc {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.5;
+}
+
 /* Research cards */
 .r-card {
   border: 1px solid #e8e8e8;
