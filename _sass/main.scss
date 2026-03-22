@@ -80,9 +80,10 @@ a:hover { color: #555; }
   margin-bottom: 3rem;
 }
 .domain-head {
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 12px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin-bottom: 1rem;
 }
 .domain-eyebrow {
   font-size: 0.62rem;
@@ -115,29 +116,31 @@ a:hover { color: #555; }
   flex-direction: column;
 }
 .r-card:hover { border-color: #ccc; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
-.r-badge {
-  display: inline-block;
-  font-size: 0.65rem;
+.proj-badge {
+  display: inline-flex !important;
+  align-items: center;
+  width: fit-content !important;
+  max-width: fit-content !important;
+  font-size: 0.62rem;
   font-weight: 500;
-  padding: 2px 7px;
+  padding: 3px 8px;
   border-radius: 3px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
-.badge-pub { background: #1a1a1a; color: #fff; }
-.badge-sub { background: #e8e8e8; color: #555; }
-.badge-wip { background: #f2f2f2; color: #999; }
+.badge-pub { background: #1a1a1a !important; color: #fff !important; }
+.badge-sub { background: #f0f0f0 !important; color: #666 !important; }
+.badge-wip { background: #f5f5f5 !important; color: #999 !important; }
 .badge-dot {
-  display: inline-block;
+  display: inline-block !important;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   margin-right: 5px;
-  vertical-align: middle;
-  margin-bottom: 1px;
+  flex-shrink: 0;
 }
-.badge-pub .badge-dot { background: #fff; }
-.badge-sub .badge-dot { background: #999; }
-.badge-wip .badge-dot { background: #ccc; }
+.badge-pub .badge-dot { background: #fff !important; }
+.badge-sub .badge-dot { background: #999 !important; }
+.badge-wip .badge-dot { background: #ccc !important; }
 .r-stat { font-size: 0.7rem; font-weight: 500; color: #555; margin-bottom: 0.35rem; }
 .r-title { font-size: 0.85rem; font-weight: 500; color: #1a1a1a; margin-bottom: 0.4rem; line-height: 1.35; }
 .r-desc { font-size: 0.78rem; color: #666; line-height: 1.55; margin-bottom: 0.7rem; flex: 1; }
