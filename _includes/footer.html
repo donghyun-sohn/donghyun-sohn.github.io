@@ -6,4 +6,15 @@
       {% endfor %}
     </div>
   </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      var target = e.target.closest('a');
+      if (target && target.hostname !== window.location.hostname && target.hostname !== '') {
+        gtag('event', 'outbound_click', {
+          'event_category': 'outbound',
+          'event_label': target.hostname
+        });
+      }
+    });
+  </script>
 </footer>

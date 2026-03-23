@@ -23,4 +23,34 @@
         gtag('js', new Date());
         gtag('config', 'G-HF6Y8MWRDK');
       </script>
+
+      <script>
+        // Scroll depth tracking
+        var scrollDepths = [25, 50, 75, 100];
+        var scrollDepthTriggered = {};
+        window.addEventListener('scroll', function() {
+          var scrollTop = window.scrollY || document.documentElement.scrollTop;
+          var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          var scrollPercent = Math.round((scrollTop / docHeight) * 100);
+          scrollDepths.forEach(function(depth) {
+            if (scrollPercent >= depth && !scrollDepthTriggered[depth]) {
+              scrollDepthTriggered[depth] = true;
+              gtag('event', 'scroll_depth', {
+                'event_category': 'engagement',
+                'event_label': depth + '%'
+              });
+            }
+          });
+        });
+
+        // Time on page tracking (30s, 60s, 120s)
+        [30, 60, 120].forEach(function(seconds) {
+          setTimeout(function() {
+            gtag('event', 'time_on_page', {
+              'event_category': 'engagement',
+              'event_label': seconds + 's'
+            });
+          }, seconds * 1000);
+        });
+      </script>
 </head>
