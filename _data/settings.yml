@@ -19,7 +19,7 @@ backgrounds:
 news:
 - {date: 'Apr 2026', text: "ScanTwin paper accepted at SeQureDB '26 (co-located with SIGMOD '26)"}
 - {date: 'Mar 2026', text: "ScanTwin paper submitted to SeQureDB '26 (co-located with SIGMOD '26)"}
-- {date: '2025', text: 'Program Committee Member, SIGMOD Availability & Reproducibility Initiative 2025'}
+- {date: 'Nov 2025', text: 'Program Committee Member, SIGMOD Availability & Reproducibility Initiative 2025'}
 - {date: 'Fall 2025', text: 'Teaching Assistant, CS 339: Intro to Database Systems, Northwestern'}
 - {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
