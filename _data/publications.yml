@@ -1,4 +1,8 @@
 featured:
+- {name: 'ScanTwin: Simulating Performance Regressions Without Access to Tenant Data',
+    description: '<b>Donghyun Sohn</b>, Jennie Rogers <br> SeQureDB Workshop at SIGMOD, 2026.'
+
+}
 - {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
     , url: 'https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf',
     description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> Proceedings of the VLDB Endowment, 2025.'
@@ -11,15 +15,3 @@ Secure and Private Database Systems (but were Afraid to Ask)'
 
 }
 
-index:
-- {name: 'Alchemy: A Query Optimization Framework for Oblivious SQL'
-    , url: 'https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf',
-    description: '<b>Donghyun Sohn</b>, Kelly Jiang, Nicolas Hammer, Jennie Rogers <br> Proceedings of the VLDB Endowment, 2025.'
-
-}
-- {name: 'Everything You Always Wanted to Know About
-Secure and Private Database Systems (but were Afraid to Ask)'
-    , url: 'http://sites.computer.org/debull/A24june/p3.pdf',
-    description: '<b>Donghyun Sohn</b>, Xiling Li, Jennie Rogers <br> Data Engineering Bulletin 2023'
-
-}
