@@ -1,5 +1,5 @@
 menu:
-- {name: 'Research', url: '/research'}
+#- {name: 'Research', url: '/research'}
 - {name: 'CV', url: '/cv/Donghyun_Sohn_Resume.pdf'}
 #- {name: 'Backgrounds', url: '/backgrounds'}
 #- {name: 'Blogs', url: '/blogs'}
