@@ -1,5 +1,6 @@
 featured:
-- {name: 'ScanTwin: Simulating Performance Regressions Without Access to Tenant Data',
+- {name: 'ScanTwin: Simulating Performance Regressions Without Access to Tenant Data'
+    , url: 'https://arxiv.org/abs/2605.29093',
     description: '<b>Donghyun Sohn</b>, Jennie Rogers <br> SeQureDB Workshop at SIGMOD, 2026.'
 
 }
