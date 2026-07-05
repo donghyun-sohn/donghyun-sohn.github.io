@@ -35,6 +35,22 @@ layout: default
   </div>
 </div>
 
+<!-- Experience Section -->
+<div class="section-block mb-5">
+  <p class="section-label">Experience</p>
+  <div class="exp-list">
+    {% for item in site.data.settings.experience %}
+    <div class="exp-item">
+      <span class="exp-date">{{ item.date }}</span>
+      <div class="exp-body">
+        <div class="exp-role">{{ item.role }} · <span class="exp-org">{{ item.org }}</span></div>
+        {% if item.detail %}<div class="exp-detail">{{ item.detail }}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 <!-- Research Section -->
 <div class="section-block mb-5">
   <p class="section-label">Research</p>

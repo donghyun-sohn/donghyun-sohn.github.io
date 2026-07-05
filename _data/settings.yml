@@ -23,6 +23,9 @@ news:
 - {date: 'Fall 2025', text: 'Teaching Assistant, CS 339: Intro to Database Systems, Northwestern'}
 - {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
+experience:
+- {date: 'Jun 2026 – Present', role: 'Systems & Infrastructure Engineer Intern', org: 'LinkedIn', detail: 'Materialized View team'}
+
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}
 - {icon: 'twitter', link: 'https://twitter.com/Dustin_DHSohn', title: 'Twitter'}
