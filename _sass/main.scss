@@ -101,13 +101,10 @@ a:hover { color: $navy-dark; }
 .exp-logo {
   width: 42px;
   height: 42px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
+  border-radius: 9px;
+  object-fit: contain;
   flex-shrink: 0;
+  display: block;
 }
 .exp-body { flex: 1; min-width: 0; }
 .exp-date {

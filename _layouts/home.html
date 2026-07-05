@@ -41,7 +41,7 @@ layout: default
   <div class="exp-list">
     {% for item in site.data.settings.experience %}
     <div class="exp-item">
-      {% if item.logo %}<div class="exp-logo" style="background: {{ item.logo_bg | default: '#3C4E6E' }};"><i class="fab fa-{{ item.logo }}"></i></div>{% endif %}
+      {% if item.logo_img %}<img class="exp-logo" src="{{ site.baseurl }}/assets/img/{{ item.logo_img }}" alt="{{ item.org }} logo">{% endif %}
       <div class="exp-body">
         <div class="exp-role">{{ item.role }} · <span class="exp-org">{{ item.org }}</span></div>
         {% if item.detail %}<div class="exp-detail">{{ item.detail }}</div>{% endif %}
