@@ -160,15 +160,6 @@ a:hover { color: $navy-dark; }
 .r-stat { font-size: 0.7rem; font-weight: 500; color: $navy; margin-bottom: 0.35rem; }
 .r-title { font-size: 0.85rem; font-weight: 500; color: $ink; margin-bottom: 0.4rem; line-height: 1.35; }
 .r-desc { font-size: 0.78rem; color: #666; line-height: 1.55; margin-bottom: 0.7rem; flex: 1; }
-.r-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 0.6rem; }
-.r-tag {
-  font-size: 0.65rem;
-  color: $navy-soft;
-  background: $navy-tint;
-  border: 1px solid $navy-tint-2;
-  padding: 1px 6px;
-  border-radius: 3px;
-}
 .r-links { display: flex; gap: 0.75rem; margin-top: auto; }
 .r-link { font-size: 0.78rem; color: $navy; text-decoration: none; font-weight: 500; }
 .r-link:hover { color: $navy-dark; text-decoration: underline; }

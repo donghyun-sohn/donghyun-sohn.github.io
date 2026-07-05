@@ -10,7 +10,7 @@ layout: default
   <div class="col-lg-9 col-md-8">
     <p class="text-uppercase hero-eyebrow small fw-semibold ls-wide mb-2">PhD Candidate · Northwestern University</p>
     <h1 class="hero-name mb-1">Donghyun Sohn</h1>
-    <p class="text-muted mb-3" style="font-size:0.9rem">Database Systems &amp; Privacy-Preserving Computation</p>
+    <p class="text-muted mb-3" style="font-size:0.9rem">Database Management Systems &amp; Privacy-Preserving Computation</p>
     <div class="hero-bio mb-4">
       <p>I'm Donghyun Sohn, a Ph.D. candidate in Computer Science at Northwestern University, advised by Professor Jennie Rogers.</p>
       <p>My research focuses on building secure and efficient data processing systems at the intersection of databases and cryptography — developing practical query engines that use MPC and FHE to run sensitive queries efficiently without compromising security.</p>
@@ -52,16 +52,14 @@ layout: default
           <span class="venue-tag badge-pub"><span class="badge-dot"></span>VLDB 2025</span>
           <div class="r-title">Alchemy: Oblivious Query Optimization</div>
           <div class="r-desc">Protocol-agnostic optimization framework combining circuit-aware cost modeling with classical query optimization for MPC-based SQL execution. Achieves up to 100× speedup across multiple cryptographic protocols.</div>
-          <div class="r-tags"><span class="r-tag">MPC</span><span class="r-tag">Cost Model</span><span class="r-tag">Query Optimization</span></div>
           <div class="r-links"><a href="https://www.vldb.org/pvldb/vol18/p3021-sohn.pdf" class="r-link" onclick="gtag('event', 'paper_click', {'event_category': 'research', 'event_label': 'alchemy'})">Paper ↗</a><a href="https://github.com/vaultdb/alchemy" class="r-link" onclick="gtag('event', 'code_click', {'event_category': 'research', 'event_label': 'alchemy'})">Code ↗</a></div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="r-card">
           <span class="venue-tag badge-sub"><span class="badge-dot"></span>In Submission</span>
-          <div class="r-title">HAMMER: FHE Analytical Query Engine</div>
+          <div class="r-title">HAMMER: Homomorphic Encryption Analytical Query Engine</div>
           <div class="r-desc">OpenFHE-based columnar engine for encrypted OLAP workloads. Optimized via SIMD batching, multi-threading, and a hybrid FHE-to-MPC conversion layer for practical encrypted analytics.</div>
-          <div class="r-tags"><span class="r-tag">FHE</span><span class="r-tag">OpenFHE</span><span class="r-tag">OLAP</span><span class="r-tag">SW/HW Co-design</span></div>
         </div>
       </div>
     </div>
@@ -80,7 +78,6 @@ layout: default
           <span class="venue-tag badge-pub"><span class="badge-dot"></span>SeQureDB (SIGMOD 2026 Workshop)</span>
           <div class="r-title">ScanTwin: Differential Privacy for OLAP Regression</div>
           <div class="r-desc">Framework for generating DP-compliant synthetic datasets from Parquet footers for scan operator benchmarking. Extracts per-row-group sketches without accessing raw data.</div>
-          <div class="r-tags"><span class="r-tag">Differential Privacy</span><span class="r-tag">Parquet</span><span class="r-tag">DuckDB</span></div>
           <div class="r-links"><a href="https://arxiv.org/abs/2605.29093" class="r-link" onclick="gtag('event', 'paper_click', {'event_category': 'research', 'event_label': 'scantwin'})">Paper ↗</a></div>
         </div>
       </div>
@@ -89,7 +86,6 @@ layout: default
           <span class="venue-tag badge-wip"><span class="badge-dot"></span>In Progress</span>
           <div class="r-title">Extending ScanTwin to Full Operator Coverage</div>
           <div class="r-desc">Generalizing the ScanTwin framework beyond scan operators to joins, aggregations, and filters — enabling end-to-end DP-safe performance regression across analytical query pipelines.</div>
-          <div class="r-tags"><span class="r-tag">Query Operators</span><span class="r-tag">Benchmarking</span><span class="r-tag">Privacy</span></div>
         </div>
       </div>
     </div>
@@ -108,7 +104,6 @@ layout: default
           <span class="venue-tag badge-wip"><span class="badge-dot"></span>In Progress</span>
           <div class="r-title">HSTG: Hierarchical Schema-Topology Graph for NL2SQL</div>
           <div class="r-desc">Investigating LLM-based NL2SQL translation with a focus on schema incompleteness as a structural bottleneck. Evaluating retrieval-augmented approaches on the BIRD benchmark.</div>
-          <div class="r-tags"><span class="r-tag">NL2SQL</span><span class="r-tag">LLM</span><span class="r-tag">BIRD</span><span class="r-tag">RAG</span></div>
         </div>
       </div>
     </div>
