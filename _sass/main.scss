@@ -89,8 +89,8 @@ a:hover { color: $navy-dark; }
 .exp-list { display: flex; flex-direction: column; gap: 0.75rem; }
 .exp-item {
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+  gap: 0.9rem;
+  align-items: center;
   border: 1px solid #e8e8e8;
   border-left: 3px solid $navy;
   border-radius: 10px;
@@ -98,6 +98,18 @@ a:hover { color: $navy-dark; }
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .exp-item:hover { box-shadow: 0 3px 14px rgba(60,78,110,0.10); }
+.exp-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.exp-body { flex: 1; min-width: 0; }
 .exp-date {
   font-size: 0.7rem;
   font-weight: 600;
@@ -107,6 +119,7 @@ a:hover { color: $navy-dark; }
   border-radius: 3px;
   white-space: nowrap;
   flex-shrink: 0;
+  margin-left: auto;
 }
 .exp-role { font-size: 0.88rem; font-weight: 500; color: $ink; line-height: 1.4; }
 .exp-org { color: $navy; font-weight: 600; }

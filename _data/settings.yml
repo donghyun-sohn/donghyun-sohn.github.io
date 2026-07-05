@@ -24,7 +24,7 @@ news:
 - {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
 experience:
-- {date: 'Jun 2026 – Present', role: 'Systems & Infrastructure Engineer Intern', org: 'LinkedIn', detail: 'Materialized View team'}
+- {date: 'Jun 2026 – Present', role: 'Systems & Infrastructure Engineer Intern (PhD)', org: 'LinkedIn', detail: 'Materialized View team', logo: 'linkedin-in', logo_bg: '#0A66C2'}
 
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}
