@@ -24,7 +24,7 @@ news:
 - {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
 experience:
-- {date: 'Jun 2026 – Sep 2026', role: 'Systems & Infrastructure Engineer Intern (PhD)', org: 'LinkedIn', detail: 'Data Processing Pipeline team — detecting and ranking candidates from LinkedIn-scale Spark query plans', logo_img: 'linkedin.svg'}
+- {date: 'Jun 2026 – Sep 2026', role: 'Systems & Infrastructure Engineer Intern (PhD)', org: 'LinkedIn', detail: 'Data Processing Pipeline team — detecting and ranking materialized view candidates from LinkedIn-scale Spark query plans', logo_img: 'linkedin.svg'}
 
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}
