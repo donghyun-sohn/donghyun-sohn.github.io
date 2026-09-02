@@ -16,7 +16,7 @@ backgrounds:
 #- {name: 'MIT 6.875 Foundations of Cryptography (Fall 2021)', url: 'MIT 6.875'}
 
 news:
-- {date: 'Jun 2026', text: 'Joining LinkedIn as Systems & Infrastructure Engineer Intern on the Materialized View team'}
+- {date: 'Jun 2026', text: 'Joining LinkedIn as Systems & Infrastructure Engineer Intern on the Data Processing Pipeline team'}
 - {date: 'Apr 2026', text: "ScanTwin paper accepted at SeQureDB '26 (co-located with SIGMOD '26)"}
 - {date: 'Mar 2026', text: "ScanTwin paper submitted to SeQureDB '26 (co-located with SIGMOD '26)"}
 - {date: 'Nov 2025', text: 'Program Committee Member, SIGMOD Availability & Reproducibility Initiative 2025'}
@@ -24,7 +24,7 @@ news:
 - {date: 'May 2025', text: 'Paper accepted at VLDB 2025 — Alchemy: A Query Optimization Framework for Oblivious SQL'}
 
 experience:
-- {date: 'Jun 2026 – Present', role: 'Systems & Infrastructure Engineer Intern (PhD)', org: 'LinkedIn', detail: 'Materialized View team', logo_img: 'linkedin.svg'}
+- {date: 'Jun 2026 – Sep 2026', role: 'Systems & Infrastructure Engineer Intern (PhD)', org: 'LinkedIn', detail: 'Data Processing Pipeline team — detecting and ranking candidates from LinkedIn-scale Spark query plans', logo_img: 'linkedin.svg'}
 
 social:
 - {icon: 'github', link: 'https://github.com/donghyun-sohn', title: 'GitHub'}
